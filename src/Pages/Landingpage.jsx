@@ -8,7 +8,7 @@ import OurPartners from '../Components/homepage/Partners';
 
 const LandingPage = () => {
   return (
-    <div className="app">
+    <div className="app ">
         <HeroContent />
         <WorkingAreas />
         <Vision />
