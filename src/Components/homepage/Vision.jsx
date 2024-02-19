@@ -22,8 +22,9 @@ equitable world for all.</h2>
         </button>
         </div>
         <div className="w-1/2">
-          <img className="w-full h-auto" src="" alt="Our Approach" />
-        </div>
+  <img className="w-full h-auto rounded-full" src="https://images.unsplash.com/photo-1569939012617-bd8f156b934a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Approach" />
+</div>
+
       </div>
     </div>
   );

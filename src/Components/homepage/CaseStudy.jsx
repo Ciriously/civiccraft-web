@@ -1,5 +1,8 @@
 import React from 'react';
 import arrow from '../../assets/arrowupright.svg';
+import cs2 from '../../assets/casestudy/cs2.jpg';
+import cs3 from '../../assets/casestudy/cs3.jpg';
+import cs4 from '../../assets/casestudy/cs4.jpg';
 
 const CaseStudy = () => {
   return (
@@ -17,14 +20,14 @@ const CaseStudy = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
-          <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Case Study Image" className="mx-auto" />
+          <img src={cs2} alt="Case Study Image" className="mx-auto" style={{ width: '80%', height: '80%' }} />
         </div>
       </div>
       
       {/* Second Case Study */}
       <div className="flex flex-wrap items-center mb-8">
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
-          <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Case Study Image" className="mx-auto" />
+          <img src={cs3} alt="Case Study Image" className="mx-auto" style={{ width: '80%', height: '80%' }} />
         </div>
         <div className="w-full md:w-1/2">
           <div>
@@ -51,13 +54,14 @@ const CaseStudy = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
-          <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Case Study Image" className="mx-auto" />
+          <img src={cs4} alt="Case Study Image" className="mx-auto" style={{ width: '80%', height: '80%' }} />
         </div>
       </div>
-       {/* fourth Case Study */}
-       <div className="flex flex-wrap items-center mb-8">
+      
+      {/* Fourth Case Study */}
+      <div className="flex flex-wrap items-center mb-8">
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
-          <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Case Study Image" className="mx-auto" />
+          <img src={cs4} alt="Case Study Image" className="mx-auto" style={{ width: '80%', height: '80%' }} />
         </div>
         <div className="w-full md:w-1/2">
           <div>

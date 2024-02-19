@@ -14,11 +14,11 @@ const HeroContent = () => {
     {/* Navbar component */}
     <Navbar />
 
-    <div className="flex mt-12 flex-col items-center justify-center ml-40">
+    <div className="flex mt-8 flex-col items-center justify-center ml-40">
       {/* Title and subtitle */}
       
-      <h1 className="title text-center text-4xl font-bold font-inter">Transforming Governance through Digital Solutions</h1>
-      <p className="subtitle text-center mt-8 text font-inter">We are an independent nonprofit institute developing AI-based solutions for underserved communities in developing countries.</p>
+      <h1 className=" text-center text-4xl font-bold font-inter">Transforming Governance through Digital Solutions</h1>
+      <p className="text-lg text-center mt-6 text font-inter">We are an independent nonprofit institute developing AI-based solutions for underserved communities in developing countries.</p>
       
       {/* Cards section */}
       <div className="flex justify-center w-125 mr-60 mt-8">
@@ -29,8 +29,9 @@ const HeroContent = () => {
           </div>
           <div className="p-4 flex justify-between items-center">
             <div>
-              <h2 className="text-xl font-semibold">Card Title 1</h2>
-              <p className="mt-2 text-gray-600">Subtitle for Card 1</p>
+              <h2 className="text-xl text-[#40393B] font-semibold">Healthcare</h2>
+              <p className="mt-2 text-[#40393B] text-lg ">Decision-making support and models to help civic authorities respond 
+to the pandemic.</p>
             </div>
             <svg className="w-6 h-6 text-gray-400 fill-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8.293 4.293a1 1 0 011.414 1.414L6.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4zM16 10a1 1 0 01-1 1H4a1 1 0 010-2h11a1 1 0 011 1z"/></svg>
           </div>
@@ -42,8 +43,9 @@ const HeroContent = () => {
           </div>
           <div className="p-4 flex justify-between items-center">
             <div>
-              <h2 className="text-xl font-semibold">Card Title 1</h2>
-              <p className="mt-2 text-gray-600">Subtitle for Card 1</p>
+              <h2 className="text-xl font-semibold">Agri-Tech</h2>
+              <p className="mt-2 text-gray-600">Decision-making support and models to help civic authorities respond 
+to the pandemic.</p>
             </div>
             <svg className="w-6 h-6 text-gray-400 fill-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8.293 4.293a1 1 0 011.414 1.414L6.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4zM16 10a1 1 0 01-1 1H4a1 1 0 010-2h11a1 1 0 011 1z"/></svg>
           </div>
@@ -55,7 +57,7 @@ const HeroContent = () => {
           </div>
           <div className="p-4 flex justify-between items-center">
             <div>
-              <h2 className="text-xl font-semibold">Card Title 1</h2>
+              <h2 className="text-xl font-semibold">Data-Drivem</h2>
               <p className="mt-2 text-gray-600">Subtitle for Card 1</p>
             </div>
             <svg className="w-6 h-6 text-gray-400 fill-current transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8.293 4.293a1 1 0 011.414 1.414L6.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4zM16 10a1 1 0 01-1 1H4a1 1 0 010-2h11a1 1 0 011 1z"/></svg>
