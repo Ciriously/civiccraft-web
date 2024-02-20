@@ -1,49 +1,38 @@
-import React, { useState } from 'react';
+import { Disclosure } from '@headlessui/react';
 
-const Navbar = () => {
-    const [activeTab, setActiveTab] = useState('Home');
+const navigation = [
+    { name: 'Home', href: '#', current: true },
+    { name: 'Working Areas', href: '#', current: false },
+    { name: 'Careers', href: '#', current: false },
+    { name: 'Blogs', href: '#', current: false },
+    { name: 'Contact Us', href: '#', current: false }
+];
 
+export default function Navbar() {
     return (
-        <nav className="bg-white py-4">
-            <div className="navbar-container mt-6 font-inter text-lg flex justify-center space-x-8">
-                <div 
-                    className={`navbar-section text-black ${activeTab === 'Home' ? 'bg-gray-200 rounded-3xl text-center font-bold' : ''}`}
-                    onClick={() => setActiveTab('Home')}
-                    style={{ cursor: 'pointer', fontSize: '1.2rem', width: '120px', height: '40px' }}
-                >
-                    Home
+        <Disclosure as="nav" className="bg-white">
+            {({ open }) => (
+                <div className="mx-auto max-w-7xl mt-4 px-2 sm:px-6 lg:px-8">
+                    <div className="relative flex h-20 items-center justify-center"> {/* Center the content */}
+                        <div className="hidden sm:ml-6 sm:block">
+                            <div className="flex space-x-4">
+                                {navigation.map((item) => (
+                                    <a
+                                        key={item.name}
+                                        href={item.href}
+                                        className={`${
+                                            item.current ? 'bg-[#D9D9D9] font-bold text-[#40393B]' : 'text-[#40393B] font-medium hover:bg-gray-300 hover:text-white'
+                                        } rounded-3xl px-6 py-4 text-lg font-inter ${item.current ? 'font-extrabold' : 'font-medium'}`}
+                                        aria-current={item.current ? 'page' : undefined}
+                                    >
+                                        {item.name}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div 
-                    className={`navbar-section  text-black ${activeTab === 'Working Areas' ? 'bg-gray-200 rounded-3xl  text-center font-bold' : ''} `}
-                    onClick={() => setActiveTab('Working Areas')}
-                    style={{ cursor: 'pointer', fontSize: '1.2rem', width: '160px', height: '50px' }}
-                >
-                    Working Areas
-                </div>
-                <div 
-                    className={`navbar-section text-black ${activeTab === 'Careers' ? 'bg-gray-200 rounded-3xl text-center font-bold' : ''}`}
-                    onClick={() => setActiveTab('Careers')}
-                    style={{ cursor: 'pointer', fontSize: '1.2rem', width: '120px', height: '40px' }}
-                >
-                    Careers
-                </div>
-                <div 
-                    className={`navbar-section text-black ${activeTab === 'Blogs' ? 'bg-gray-200 rounded-3xl text-center font-bold' : ''}`}
-                    onClick={() => setActiveTab('Blogs')}
-                    style={{ cursor: 'pointer', fontSize: '1.2rem', width: '120px', height: '40px' }}
-                >
-                    Blogs
-                </div>
-                <div 
-                    className={`navbar-section text-black ${activeTab === 'Contact Us' ? 'bg-gray-200 rounded-3xl text-center font-bold' : ''}`}
-                    onClick={() => setActiveTab('Contact Us')}
-                    style={{ cursor: 'pointer', fontSize: '1.2rem', width: '120px', height: '40px' }}
-                >
-                    Contact Us
-                </div>
-            </div>
-        </nav>
+            )}
+        </Disclosure>
     );
-};
-
-export default Navbar;
+}

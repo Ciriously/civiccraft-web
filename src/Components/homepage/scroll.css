@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Gordita-Medium";
+  src: url(../../public/fonts/Gordita-Medium.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gordita-Regular";
+  src: url(../../public/fonts/Gordita-Regular.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gordita-Light";
+  src: url(../../public/fonts/Gordita-Light.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gordita-Bold";
+  src: url(../../public/fonts/Gordita-Bold.ttf) format("truetype");
+  font-style: normal;
+}
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
 .scroll-downs {
   position: absolute;
   top: 0;
@@ -18,6 +45,7 @@
   opacity: 0.75;
   box-sizing: content-box;
   margin-top: 28rem;
+  cursor: pointer;
 }
 .scroller {
   width: 3px;

@@ -6,7 +6,7 @@ const Careers = () => {
         <div className="container mx-auto px-4 py-8">
             <div className="flex flex-wrap items-stretch">
                 {/* Left Section */}
-                <div className="w-full bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-indigo-500 via-indigo-300 to-indigo-100 md:w-1/2 flex items-center">
+                <div className="w-full bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-indigo-400 via-indigo-200 to-indigo-100 md:w-1/2 flex items-center">
                     <div className="p-8">
                         <h1 className="text-4xl text-[#40393B] font-bold mb-4">Meet Prerana Bhandari, Lead Product Designer, UI/UX</h1>
                         <p className="text-black text-lg mb-8">We are one of the only institutes of our kind in the world, and our team consists of researchers, scientists, domain experts, technologists, and entrepreneurs from some of the leading international institutions.</p>
