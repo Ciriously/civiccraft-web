@@ -20,9 +20,8 @@ export default function Navbar() {
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        className={`${
-                                            item.current ? 'bg-[#D9D9D9] font-bold  text-[#40393B]' : 'text-[#40393B] font-medium hover:bg-gray-300 hover:text-white'
-                                        } rounded-3xl px-6 py-4 text-lg font-gordita ${item.current ? 'font-extrabold' : 'font-medium'}`}
+                                        className={`${item.current ? 'bg-[#D9D9D9] font-gordita-bold  text-[#40393B]' : 'text-[#40393B] font-medium hover:bg-gray-300 hover:text-white'
+                                            } rounded-3xl px-6 py-4 text-lg font-gordita ${item.current ? 'font-extrabold' : 'font-medium'}`}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}

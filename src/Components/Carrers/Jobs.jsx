@@ -33,7 +33,7 @@ const Jobs = ({ jobListings }) => {
         {filteredJobs.map((job, index) => (
           <div
             key={index}
-            className="border-b border-gray-300 py-4 flex justify-between items-center"
+            className="border-b border-gray-300 py-8 flex justify-between items-center"
           >
             <div>
               <h3 className="text-lg font-gordita-medium">{job.title}</h3>
@@ -58,7 +58,7 @@ const Jobs = ({ jobListings }) => {
                 )}
               </div>
             </div>
-            <button className="flex items-center font-gordita-bold text-2xl text-black px-4 py-2 rounded-md shadow-sm focus:outline-none transition duration-300 ease-in-out hover:text-transparent bg-gradient-to-r from-purple-300 via-violet-800 to-lime-800 bg-clip-text">
+            <button className="flex items-center font-gordita-bold text-2xl text-black px-4 py-2 rounded-md focus:outline-none transition duration-300 ease-in-out hover:text-transparent bg-gradient-to-r from-purple-300 via-violet-800 to-lime-800 bg-clip-text">
               Apply
               <img src={arrow} alt="Apply" className="h-4 w-5 ml-4 mt-2" />
             </button>
