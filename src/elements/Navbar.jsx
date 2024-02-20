@@ -21,8 +21,8 @@ export default function Navbar() {
                                         key={item.name}
                                         href={item.href}
                                         className={`${
-                                            item.current ? 'bg-[#D9D9D9] font-bold text-[#40393B]' : 'text-[#40393B] font-medium hover:bg-gray-300 hover:text-white'
-                                        } rounded-3xl px-6 py-4 text-lg font-inter ${item.current ? 'font-extrabold' : 'font-medium'}`}
+                                            item.current ? 'bg-[#D9D9D9] font-bold  text-[#40393B]' : 'text-[#40393B] font-medium hover:bg-gray-300 hover:text-white'
+                                        } rounded-3xl px-6 py-4 text-lg font-gordita-regular ${item.current ? 'font-extrabold' : 'font-medium'}`}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}

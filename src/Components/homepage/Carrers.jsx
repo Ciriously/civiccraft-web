@@ -8,9 +8,9 @@ const Careers = () => {
                 {/* Left Section */}
                 <div className="w-full bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-indigo-400 via-indigo-200 to-indigo-100 md:w-1/2 flex items-center">
                     <div className="p-8">
-                        <h1 className="text-4xl text-[#40393B] font-bold mb-4">Meet Prerana Bhandari, Lead Product Designer, UI/UX</h1>
-                        <p className="text-black text-lg mb-8">We are one of the only institutes of our kind in the world, and our team consists of researchers, scientists, domain experts, technologists, and entrepreneurs from some of the leading international institutions.</p>
-                        <button className="bg-white text-black text-lg font-bold font-inter py-4 px-6 rounded-3xl flex items-center">
+                        <h1 className="text-4xl text-[#40393B] font-gordita-bold mb-4">Meet Prerana Bhandari, Lead Product Designer, UI/UX</h1>
+                        <p className="text-black font-gordita-regular text-lg mb-8">We are one of the only institutes of our kind in the world, and our team consists of researchers, scientists, domain experts, technologists, and entrepreneurs from some of the leading international institutions.</p>
+                        <button className="bg-white text-black text-lg  font-gordita-bold py-4 px-6 rounded-3xl flex items-center">
                             Explore Open Positions
                             <img className="ml-3 w-4 h-5" src={arrow} alt="Arrow" />
                         </button>

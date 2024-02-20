@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        "gordita-medium": ["Gordita-Medium", "sans-serif"],
+        "gordita-regular": ["Gordita-Regular", "sans-serif"],
+        "gordita-light": ["Gordita-Light", "sans-serif"],
+        "gordita-bold": ["Gordita-Bold", "sans-serif"],
+
         inter: ["Inter"],
         sans: ["Arimo"],
       },

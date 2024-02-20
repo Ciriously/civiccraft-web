@@ -52,10 +52,10 @@ const HeroContent = () => {
       {/* Navbar component */}
       <Navbar />
 
-      <div className="flex mt-8 flex-col items-center justify-center ml-40">
+      <div className="flex mt-16 flex-col items-center justify-center ml-36">
         {/* Title and subtitle */}
-        <h1 className="text-center text-5xl font-extrabold font-inter">Transforming Governance through Digital Solutions</h1>
-        <p className="text-lg text-center mt-6 font-inter">We are an independent nonprofit institute developing AI-based solutions for underserved communities in developing countries.</p>
+        <h1 className="text-center text-5xl font-gordita-bold ">Transforming Governance through Digital Solutions</h1>
+        <p className="text-lg text-center mt-6 font-gordita-regular">We are an independent nonprofit institute developing AI-based solutions for underserved communities in developing countries.</p>
 
         {/* Cards section with scroll feature */}
         <div className="cardScroll overflow-x-auto mt-14">
@@ -63,13 +63,13 @@ const HeroContent = () => {
     {cardData.map((card, index) => (
       <div key={index} className={`max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-2 bg-white rounded-lg overflow-hidden flex-shrink-0`}>
 
-                <div className="h-96 w-90 bg-gray-300">
+                <div className="h-80 w-90 bg-gray-300">
                   <img className={`h-full w-full object-cover border-b-8 ${card.borderColor}`} src={card.image} alt={`Card Header ${index + 1}`} />
                 </div>
                 <div className="p-4 flex justify-between items-center">
                   <div>
-                    <h2 className="text-2xl mt-5 mb-5 text-[#40393B] font-bold">{card.title}</h2>
-                    <p className="mt-2 text-[#40393B] text-lg">{card.description}</p>
+                    <h2 className="text-2xl mt-5 mb-5 text-[#40393B] font-bold font-gordita-medium">{card.title}</h2>
+                    <p className="mt-2 text-[#40393B] text-lg font-gordita-regular">{card.description}</p>
                   </div>
                   <svg className="w-10 h-8 mb-16 text-black fill-current transform rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8.293 4.293a1 1 0 011.414 1.414L6.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4zM16 10a1 1 0 01-1 1H4a1 1 0 010-2h11a1 1 0 011 1z" /></svg>
                 </div>
