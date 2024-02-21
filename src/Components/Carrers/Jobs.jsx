@@ -40,7 +40,7 @@ const Jobs = ({ jobListings }) => {
               <p className="text-gray-600 font-gordita-regular">
                 {job.description}
               </p>
-              <div className="flex space-x-2 mt-2 font-gordita-bold">
+              <div className="flex space-x-2 mt-2 font-gordita-medium">
                 {job.remote && (
                   <button
                     className="px-2 py-1 rounded-md border border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition duration-300 ease-in-out"
