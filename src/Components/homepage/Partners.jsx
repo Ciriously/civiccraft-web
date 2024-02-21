@@ -8,11 +8,11 @@ import UP from '../../assets/partners/UP.png';
 
 const OurPartners = () => {
   return (
-    <div className="p-8 ml-72 mr-44">
+    <div className="p-8  ml-72 mr-44">
       <h1 className="text-4xl font-bold mb-8">Our Partners</h1>
       <div className="bg-[#D9D9D9] font-bold font-inter text-xl p-4  rounded w-72 mb-24 flex items-center justify-center whitespace-nowrap">
-    <p>Government Collaborations</p>
-</div>
+        <p>Government Collaborations</p>
+      </div>
 
       <div className="grid grid-cols-4 ml-20  gap-12">
         <img className="w-48 h-auto" src={tele} alt="Partner 1" />

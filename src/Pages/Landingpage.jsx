@@ -9,13 +9,13 @@ import Footer from '../elements/Footer';
 const LandingPage = () => {
   return (
     <div className="app ">
-        <HeroContent />
-        <WorkingAreas />
-        <Vision />
-        <CaseStudy />
-        <Carrers />
-        <OurPartners />
-        <Footer />
+      <HeroContent />
+      <WorkingAreas />
+      <Vision />
+      <CaseStudy />
+      <Carrers />
+      <OurPartners />
+      <Footer />
     </div>
   );
 }

@@ -5,7 +5,7 @@ const navigation = [
     { name: 'Home', href: '#', current: true },
     { name: 'Working Areas', href: '#', current: false },
     { name: 'Careers', href: '#', current: false },
-    { name: 'Blogs', href: '#', current: false },
+    { name: 'Team', href: '#', current: false },
     { name: 'Contact Us', href: '#', current: false }
 ];
 

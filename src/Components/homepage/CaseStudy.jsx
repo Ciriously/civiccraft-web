@@ -48,7 +48,7 @@ const CaseStudy = () => {
           </div>
           <div className="w-full md:w-1/2 mt-8 md:mt-0">
             <div className="p-8">
-              <img src={caseStudy.image} alt="Case Study Image" className="mx-auto max-w-full h-auto" />
+              <img src={caseStudy.image} alt="Case Study Image" className="mx-auto max-w-full h-auto md:max-w-none md:h-auto md:w-full" style={{ maxHeight: '300px' }} />
             </div>
           </div>
         </div>
