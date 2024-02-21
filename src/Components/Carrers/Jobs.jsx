@@ -40,21 +40,27 @@ const Jobs = ({ jobListings }) => {
               <p className="text-gray-600 font-gordita-regular">
                 {job.description}
               </p>
-              <div className="flex space-x-2 mt-2 font-gordita-medium">
+              <div className="flex space-x-2 mt-2 font-gordita-bold">
                 {job.remote && (
-                  <div className="bg-green-500 text-white px-2 py-1 rounded-md">
+                  <button
+                    className="px-2 py-1 rounded-md border border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition duration-300 ease-in-out"
+                  >
                     100% Remote
-                  </div>
+                  </button>
                 )}
                 {job.fullTime && (
-                  <div className="bg-blue-500 text-white px-2 py-1 rounded-md">
+                  <button
+                    className="px-2 py-1 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out"
+                  >
                     Full Time
-                  </div>
+                  </button>
                 )}
                 {job.internship && (
-                  <div className="bg-purple-500 text-white px-2 py-1 rounded-md">
+                  <button
+                    className="px-2 py-1 rounded-md border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300 ease-in-out"
+                  >
                     Internship
-                  </div>
+                  </button>
                 )}
               </div>
             </div>
