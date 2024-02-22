@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import facebookLogo from '../assets/socials/meta.png';
+import twitterLogo from '../assets/socials/twitter.png';
+import instagramLogo from '../assets/socials/instagram.png';
+import linkedinLogo from '../assets/socials/linkedin.png';
 
 const TeamPage = () => {
     const [activeTab, setActiveTab] = useState('Core Founding');
@@ -10,19 +14,42 @@ const TeamPage = () => {
     // Dummy team member data
     const teamMembers = {
         'Core Founding': [
-            { name: 'Arthur Melo', role: 'Design Director', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', socials: [] },
-            { name: 'Emma Smith', role: 'Graphic Designer', image: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', socials: [] },
-            // Add more design team members here
+            {
+                name: 'Arthur Melo', role: 'Design Director', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', socials: [
+                    { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: twitterLogo, url: '#', label: 'Twitter' },
+                    { icon: instagramLogo, url: '#', label: 'Instagram' },
+                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
+                ]
+            },
+            {
+                name: 'Arthur Melo', role: 'Design Director', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', socials: [
+                    { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: twitterLogo, url: '#', label: 'Twitter' },
+                    { icon: instagramLogo, url: '#', label: 'Instagram' },
+                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
+                ]
+            },
         ],
         'Technical': [
-            { name: 'John Doe', role: 'Lead Developer', image: 'https://via.placeholder.com/150', socials: [] },
-            { name: 'Jane Doe', role: 'Frontend Developer', image: 'https://via.placeholder.com/150', socials: [] },
-            // Add more development team members here
+            {
+                name: 'John Doe', role: 'Lead Developer', image: 'https://via.placeholder.com/150', socials: [
+                    { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: twitterLogo, url: '#', label: 'Twitter' },
+                    { icon: instagramLogo, url: '#', label: 'Instagram' },
+                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
+                ]
+            },
         ],
         'Marketing': [
-            { name: 'Michael Johnson', role: 'Marketing Manager', image: 'https://via.placeholder.com/150', socials: [] },
-            { name: 'Sarah Lee', role: 'Content Creator', image: 'https://via.placeholder.com/150', socials: [] },
-            // Add more marketing team members here
+            {
+                name: 'Michael Johnson', role: 'Marketing Manager', image: 'https://via.placeholder.com/150', socials: [
+                    { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: twitterLogo, url: '#', label: 'Twitter' },
+                    { icon: instagramLogo, url: '#', label: 'Instagram' },
+                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
+                ]
+            },
         ],
     };
 
@@ -40,7 +67,7 @@ const TeamPage = () => {
                 <div className="flex items-center justify-center">
                     <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
                         <button
-                            className={`px-4 py-2 text-lg font-gordita-medium text-white capitalize ${activeTab === 'Core Founding' ? 'bg-blue-600' : 'text-blue-600'
+                            className={`px-4 py-2 text-lg font-gordita-medium text-blue capitalize ${activeTab === 'Core Founding' ? 'bg-blue-600' : 'text-blue-600'
                                 } md:py-3 rounded-xl md:px-12`}
                             onClick={() => handleTabClick('Core Founding')}
                         >
@@ -67,14 +94,14 @@ const TeamPage = () => {
                     {teamMembers[activeTab].map((member, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <img
-                                className="object-cover w-full rounded-xl aspect-square"
+                                className="object-cover  w-full rounded-xl aspect-square"
                                 src={member.image}
                                 alt={member.name}
                             />
-                            <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize ">
+                            <h1 className="mt-4 text-2xl font-gordita-bold font-semibold text-gray-700 capitalize ">
                                 {member.name}
                             </h1>
-                            <p className="mt-2 text-gray-800 capitalize">
+                            <p className="mt-2 text-gray-800 font-gordita-regular capitalize">
                                 {member.role}
                             </p>
                             {/* Add social links if available */}

@@ -3,30 +3,147 @@ import arrow from '../../assets/arrowupright.svg';
 
 const Vision = () => {
   return (
-    <div className="container mx-auto mt-8 px-4 py-8">
-      <h1 className="text-4xl font-inter font-bold">Vision</h1>
-      <h2 className="text-xl font-medium font-inter mt-10 text-[#40393B] mb-16">Systems that are sustainable and scalable can transform the lives of billions of people. We
-        believe that using AI to solve problems at the bottom of the pyramid can lead to a better, more
-        equitable world for all.</h2>
-      <p className="text-[#40393B] w-126  font-inter text-lg font-bold mt-6">“We are in an age where efforts to achieve the UN Sustainable Development Goals are accompanied by a revolutionary explosion of digitally available data and the penetration of internet-enabled smartphones into previously inaccessible rural locales. AI technology is the natural tool for leveraging this vast scaleup in the quantity and breadth of data into actionable machine learning models that direct on-the-ground interventions for underserved populations. “It is expected that while we are in the midst of this accelerated growth, data sources will be unstable, incomplete, and erroneous, presenting a key challenge in developing AI models. At the other end of the tech pipeline, AI solutions should be designed to facilitate delivery to the last mile user without significantly perturbing existing public systems.”</p>
-      <p className="text-black font-bold mt-8">– Chinmay Awade, Chief Enginer, AI/ML</p>
+    <>
+      {/* Container for demo purpose */}
+      <div className="container my-24 mx-auto md:px-6">
+        {/* Section: Design Block */}
+        <section className="mb-32">
+          <h2 className="mb-12  text-center text-3xl font-gordita-bold">
+            Vision.
+          </h2>
+          <div className="flex flex-wrap items-center">
+            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-6 lg:mb-0 lg:w-5/12">
 
-      <div className="flex mt-16">
-        <div className="w-1/2 pr-8">
-          {/* <h1 className="text-4xl font-inter font-bold">Our Approach</h1> */}
-          <p className="text-xl font-medium font-inter mt-10 text-[#40393B] mb-16">At Civiccraft, we address pressing societal issues where AI presents transformative possibilities. We integrate rigorous scientific inquiry with empathetic collaboration, ensuring that the voices and needs of the communities we serve guide our initiatives toward meaningful impact..</p>
-          <p className="text-xl font-medium font-inter mt-10 text-[#000] mb-16">We are currently building AI-based solutions in the agriculture and health domains, such as pest management for cotton farms, maternal, newborn and child health and tuberculosis.</p>
-          <button className="bg-gray-300 text-black text-lg font-bold py-4 px-6 rounded-3xl mt-8 flex items-center">
-            Our Approach
-            <img className="ml-3 w-4 h-5" src={arrow} alt="Arrow" />
-          </button>
-        </div>
-        <div className="w-1/2">
-          <img className="w-full h-auto rounded-full" src="https://images.unsplash.com/photo-1569939012617-bd8f156b934a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Approach" />
-        </div>
-
+              <img
+                src="https://demo.themesberg.com/landwind/images/hero.png" alt="hero image"
+                className="w-full"
+              />
+            </div>
+            <div className="w-full shrink-0 grow-0 basis-auto md:px-6 lg:w-7/12">
+              <div className="mb-12 flex">
+                <div className="shrink-0">
+                  <div className="rounded-md p-4 shadow-lg bg-[hsl(231,52.6%,20%)] dark:bg-[hsl(231,52.6%,30%)]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="h-6 w-6 text-white"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-4 grow">
+                  <p className="mb-2 font-gordita-medium">Ability:</p>
+                  <p className="text-neutral-500 font-gordita-regular dark:text-gray-500">
+                    The capacity to engage in AI problem definition
+                    and to support AI solutions sustainably.
+                  </p>
+                </div>
+              </div>
+              <div className="mb-12 flex">
+                <div className="shrink-0">
+                  <div className="rounded-md p-4 shadow-lg bg-[hsl(231,52.6%,20%)] dark:bg-[hsl(231,52.6%,30%)]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="h-6 w-6 text-white"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-4 grow">
+                  <p className="mb-2 font-gordita-medium">Create:</p>
+                  <p className="text-neutral-500 font-gordita-regular dark:text-gray-500">
+                    Once a specific problem is defined, the actions
+                    (including technologies and methods) that may be used
+                    to build AI solutions.
+                  </p>
+                </div>
+              </div>
+              <div className="mb-12 flex">
+                <div className="shrink-0">
+                  <div className="rounded-md p-4 shadow-lg bg-[hsl(231,52.6%,20%)] dark:bg-[hsl(231,52.6%,30%)]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="h-6 w-6 text-white"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-4 grow">
+                  <p className="mb-2 font-gordita-medium">Use: </p>
+                  <p className="text-neutral-500 font-gordita-regular dark:text-gray-500">
+                    Activities involved in effective application of the
+                    solutions
+                  </p>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="shrink-0">
+                  <div className="rounded-md p-4 shadow-lg bg-[hsl(231,52.6%,20%)] dark:bg-[hsl(231,52.6%,30%)]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="h-6 w-6 text-white"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-4 grow">
+                  <p className="mb-2 font-gordita-medium">Benefits:</p>
+                  <p className="text-red-300 font-gordita-regular dark:text-gray-500">
+                    Anticipated benefits at the beginning of the
+                    project should match benefits accrued once it is
+                    implemented. It includes course correction and actions
+                    to modify a partner’s Ability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Section: Design Block */}
       </div>
-    </div>
+      {/* Container for demo purpose */}
+    </>
+
   );
 }
 

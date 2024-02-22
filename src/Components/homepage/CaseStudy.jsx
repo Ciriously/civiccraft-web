@@ -3,6 +3,7 @@ import arrow from '../../assets/arrowupright.svg';
 import cs2 from '../../assets/casestudy/cs2.jpg';
 import cs3 from '../../assets/casestudy/cs3.jpg';
 import cs4 from '../../assets/casestudy/cs4.jpg';
+import { CSbtns } from './CSbtns';
 
 const sectionsData = [
   {
@@ -47,12 +48,16 @@ const CaseStudy = () => {
 
   return (
     <div>
+      <CSbtns />
+
       {sectionsData.map((section, index) => (
         <section key={index} className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             {section.switchContent ? (
               <>
+
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+
                   <img
                     className="object-cover object-center rounded"
                     alt="hero"
