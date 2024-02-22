@@ -6,6 +6,7 @@ import CaseStudy from '../Components/homepage/CaseStudy';
 import Carrers from '../Components/homepage/Carrers';
 import OurPartners from '../Components/homepage/Partners';
 import Footer from '../elements/Footer';
+import Latestupdate from '../Components/homepage/Latestupdate';
 const LandingPage = () => {
   return (
     <div className="app ">
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <CaseStudy />
       <Carrers />
       <OurPartners />
+      <Latestupdate />
       <Footer />
     </div>
   );

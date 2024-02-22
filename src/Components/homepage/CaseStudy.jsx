@@ -35,7 +35,7 @@ const CaseStudy = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {caseStudies.map((caseStudy, index) => (
-        <div key={index} className={`flex flex-wrap items-center mb-8 ${caseStudy.reverse ? 'flex-row-reverse' : ''}`}>
+        <div key={index} className={`flex flex-wrap items-center mb-8 ${caseStudy.reverse ? 'flex-col-reverse md:flex-row-reverse' : 'flex-col md:flex-row'}`}>
           <div className="w-full md:w-1/2">
             <div className="p-8">
               <h1 className="text-3xl font-bold">{caseStudy.title}</h1>
@@ -48,7 +48,7 @@ const CaseStudy = () => {
           </div>
           <div className="w-full md:w-1/2 mt-8 md:mt-0">
             <div className="p-8">
-              <img src={caseStudy.image} alt="Case Study Image" className="mx-auto max-w-full h-auto md:max-w-none md:h-auto md:w-full" style={{ maxHeight: '300px' }} />
+              <img src={caseStudy.image} alt="Case Study Image" className="mx-auto object-cover max-w-full h-auto md:max-w-none md:h-auto md:w-full" style={{ maxHeight: '300px' }} />
             </div>
           </div>
         </div>

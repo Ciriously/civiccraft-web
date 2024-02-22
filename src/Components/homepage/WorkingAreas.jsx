@@ -17,9 +17,9 @@ const WorkingAreas = () => {
     };
 
     return (
-        <div className="working-areas mt-60 ml-72 mb-28 flex">
+        <div className="working-areas mt-96 ml-72 mb-28 flex">
             <div className="left-section pr-8">
-                <h2 className="text-4xl font-gordita-medium mb-4">Our Working Areas</h2>
+                <h2 className="text-4xl  font-gordita-medium mb-4">Our Working Areas</h2>
                 <ul className="space-y-12 mt-20 font-inter ">
                     {Object.keys(areaInfo).map((area, index) => (
                         <li
