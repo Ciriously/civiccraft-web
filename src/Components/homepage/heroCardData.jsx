@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import h1 from '../../assets/hero/h1.jpg';
 import h2 from '../../assets/hero/h2.jpg';
 
@@ -20,15 +20,42 @@ const heroCardData = [
         title: 'Some title goes here',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
         link: '#'
-    }
+    },
+    {
+        imageUrl: h1,
+        title: 'Some title goes here',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
+        link: '#'
+    },
+    {
+        imageUrl: h1,
+        title: 'Some title goes here',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
+        link: '#'
+    },
 ];
 
 const HeroCard = ({ heroCardData }) => {
+    const scrollContainerRef = useRef(null);
+
+    const scrollLeft = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollLeft -= 300; // Adjust scroll amount as needed
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollLeft += 300; // Adjust scroll amount as needed
+        }
+    };
+
     return (
-        <div className="container px-4 flex-grow w-full py-4 sm:py-16 mx-auto px-0">
+        <div className="container px-4 mr-40 flex-grow w-full py-4 sm:py-16 mx-auto px-0 relative">
             <div className="mx-auto w-full md:w-4/5 px-4">
-                <div className="container my-8">
+                <div className="container my-8  relative">
                     <div
+                        ref={scrollContainerRef}
                         id="scrollContainer"
                         className="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8"
                         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }} // Hide scrollbar
@@ -62,6 +89,8 @@ const HeroCard = ({ heroCardData }) => {
                             </div>
                         ))}
                     </div>
+                    <button onClick={scrollLeft} className="absolute right-10 bottom-0 bg-gray-200 px-2 py-1 rounded-md">←</button>
+                    <button onClick={scrollRight} className="absolute right-0 bottom-0 bg-gray-200 px-2 py-1 rounded-md">→</button>
                 </div>
             </div>
         </div>
