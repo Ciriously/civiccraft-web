@@ -23,13 +23,7 @@ const HeroContent = () => {
         <p className="text-lg text-center mt-6 font-gordita-regular">We are an independent nonprofit institute developing AI-based solutions for underserved communities in developing countries.</p>
 
         {/* Cards section with scroll feature */}
-        <div className="cardScroll overflow-x-auto mt-14">
-          <div className="flex justify-start w-full">
-            {heroCardData.map((card, index) => (
-              <HeroCard key={index} {...card} />
-            ))}
-          </div>
-        </div>
+        <HeroCard heroCardData={heroCardData} />
       </div>
 
       <div className=" mt-16 flex justify-center">
@@ -39,7 +33,6 @@ const HeroContent = () => {
           </svg>
         </button>
       </div>
-
     </div>
   );
 }
