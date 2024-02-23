@@ -3,6 +3,7 @@ import facebookLogo from '../assets/socials/meta.png';
 import twitterLogo from '../assets/socials/twitter.png';
 import instagramLogo from '../assets/socials/instagram.png';
 import linkedinLogo from '../assets/socials/linkedin.png';
+import Navbar from '.././elements/Navbar'; // Import the Navbar component
 
 const TeamPage = () => {
     const [activeTab, setActiveTab] = useState('Core Founding');
@@ -54,7 +55,8 @@ const TeamPage = () => {
     };
 
     return (
-        <section className="bg-white">
+        <section>
+            <Navbar />
             <div className="container px-6 py-10 mx-auto">
                 <h1 className="text-4xl font-gordita-bold text-center text-gray-800 capitalize lg:text-3xl">
                     Team Civiccraft

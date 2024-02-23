@@ -7,32 +7,44 @@ const heroCardData = [
         imageUrl: h1,
         title: 'Some title goes here',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
-        link: '#'
+        link: '#',
+        color: 'blue'
     },
     {
         imageUrl: h2,
         title: 'Some title goes here',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
-        link: '#'
+        link: '#',
+        color: 'green'
+    },
+    {
+        imageUrl: h1,
+        title: 'Some title goes here',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
+        link: '#',
+        color: 'blue'
     },
     {
         imageUrl: h2,
         title: 'Some title goes here',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
-        link: '#'
+        link: '#',
+        color: 'green'
     },
     {
         imageUrl: h1,
         title: 'Some title goes here',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
-        link: '#'
+        link: '#',
+        color: 'blue'
     },
     {
-        imageUrl: h1,
+        imageUrl: h2,
         title: 'Some title goes here',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
-        link: '#'
-    },
+        link: '#',
+        color: 'green'
+    }
 ];
 
 const HeroCard = ({ heroCardData }) => {
@@ -51,9 +63,9 @@ const HeroCard = ({ heroCardData }) => {
     };
 
     return (
-        <div className="container px-4 mr-40 flex-grow w-full py-4 sm:py-16 mx-auto px-0 relative">
-            <div className="mx-auto w-full md:w-4/5 px-4">
-                <div className="container my-8  relative">
+        <div className="container px-4 mr-40 flex-grow w-full  py-4 sm:py-16 mx-auto px-0 relative">
+            <div className="mx-auto w-full md:w-4/5 px-2">
+                <div className="container my-8 relative">
                     <div
                         ref={scrollContainerRef}
                         id="scrollContainer"
@@ -61,27 +73,29 @@ const HeroCard = ({ heroCardData }) => {
                         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }} // Hide scrollbar
                     >
                         {heroCardData.map((card, index) => (
-                            <div key={index} className="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4">
+                            <div key={index} className="flex-none w-96 md:w-2/5 mr-8 md:pb-4">
                                 <a href={card.link} className="space-y-4">
-                                    <div className="aspect-w-16 aspect-h-9">
+                                    <div className="aspect-w-16 aspect-h-8">
                                         <img
-                                            className="object-cover shadow-md hover:shadow-xl rounded-lg w-full h-64" // Set fixed height for uniformity
+                                            className={`object-cover shadow-md hover:shadow-xl rounded-lg w-full h-96 border-b-8 border-${card.color}-500`} // Set fixed height for uniformity and add border to image
                                             src={card.imageUrl}
                                             alt=""
                                         />
                                     </div>
                                     <div className="px-4 py-2">
-                                        <div className="text-lg leading-6 font-medium space-y-1">
-                                            <h3 className="font-gordita-bold text-gray-800 text-3xl mb-2">
+                                        <div className="text-lg leading-6 font-medium space-y-1 flex items-center justify-between">
+                                            <h3 className="font-gordita-bold text-gray-800 text-xl mb-2">
                                                 {card.title}
                                             </h3>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" className="h-5 w-5  ml-2">
+                                                <path style={{ fill: '#232326' }} d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right" />
+                                            </svg>
                                         </div>
+
+
                                         <div className="text-lg font-gordita-regular text-gray-400">
                                             <p className="">
                                                 {card.description}
-                                            </p>
-                                            <p className="font-medium text-sm text-indigo-600 mt-2">
-                                                Read more<span className="text-indigo-600">…</span>
                                             </p>
                                         </div>
                                     </div>

@@ -38,18 +38,25 @@ const Latestupdate = () => {
             ],
             image: 'https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
+
     ];
 
     return (
         <div className="max-w-8xl mt-44 mb-28 mx-auto">
             <h1 className="text-3xl ml-44 font-gordita-bold mt-8 mb-28">Latest Updates</h1>
-            <div className="flex flex-wrap justify-start">
+            <div className="overflow-x-scroll scrolling-touch flex flex-no-wrap justify-start ml-44 mb-4">
                 {techBlogs.map((blog, index) => (
-                    <div key={index} className="max-w-sm w-full sm:w-1/2 md:w-1/3 lg:w-1/4 rounded ml-44 overflow-hidden shadow-lg m-4">
+                    <div key={index} className="max-w-sm w-full sm:w-1/2 md:w-1/3 lg:w-1/4 rounded overflow-hidden m-4">
                         <img className="w-full" src={blog.image} alt="Blog" />
                         <div className="px-6 py-4">
                             <div className="font-gordita-medium  text-xl mb-2">{blog.title}</div>
                             <p className="text-gray-700 font-gordita-regular text-base">{blog.description}</p>
+                        </div>
+                        <div className="px-6 pt-4 pb-2 flex items-center justify-between">
+                            <div className="text-sm font-gordita-bold text-gray-600">Read more</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" className="h-5 w-5  ml-2">
+                                <path style={{ fill: '#232326' }} d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right" />
+                            </svg>
                         </div>
                         <div className="px-6 pt-4 pb-2">
                             {blog.tags.map((tag, index) => (

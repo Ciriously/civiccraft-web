@@ -1,6 +1,6 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation hook
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
@@ -10,6 +10,8 @@ const navigation = [
 ];
 
 export default function Navbar() {
+    const location = useLocation(); // Get current location using useLocation hook
+
     return (
         <Disclosure as="nav">
             {({ open }) => (
@@ -21,12 +23,11 @@ export default function Navbar() {
                                     <Link
                                         key={item.name}
                                         to={item.href}
-                                        className={`relative ${item.current ? 'font-gordita-bold text-[#40393B]' : 'text-[#40393B] font-medium'
+                                        className={`relative ${location.pathname === item.href ? 'font-gordita-bold text-[#40393B]' : 'text-[#40393B] font-medium'
                                             } rounded-3xl px-6 py-4 text-lg font-gordita`}
-                                        aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
-                                        {item.current && <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-16 bg-black rounded-full"></div>}
+                                        {location.pathname === item.href && <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-16 bg-black rounded-full"></div>}
                                     </Link>
                                 ))}
                             </div>
