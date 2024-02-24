@@ -15,7 +15,7 @@ const Careers = () => {
     return (
         <div>
             <Navbar /> {/* Include the Navbar component */}
-            <div className="container mx-auto flex flex-col items-center justify-start pt-12">
+            <div className="container mx-auto flex flex-col items-center justify-start pt-12 px-4"> {/* Added px-4 for padding on smaller screens */}
                 <h1 className="text-5xl font-gordita-bold text-gray-800 mb-8 text-center">
                     Join our World-class Team of <br />
                     <span className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-cyan-700 via-red-600 to-fuchsia-600 bg-clip-text text-transparent">Creators</span> and <span className="bg-gradient-to-tl from-slate-800 via-violet-500 to-zinc-400 bg-clip-text text-transparent"> Developers </span>🚀

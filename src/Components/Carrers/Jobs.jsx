@@ -33,40 +33,40 @@ const Jobs = ({ jobListings }) => {
         {filteredJobs.map((job, index) => (
           <div
             key={index}
-            className="border-b border-gray-300 py-8 flex justify-between items-center"
+            className="border-b border-gray-300 py-8 flex flex-col md:flex-row md:items-center md:justify-between"
           >
-            <div>
+            <div className="md:w-3/4 ml-4 md:mr-4">
               <h3 className="text-lg font-gordita-medium">{job.title}</h3>
               <p className="text-gray-600 font-gordita-regular">
                 {job.description}
               </p>
-              <div className="flex space-x-2 mt-2 font-gordita-medium">
+              <div className="flex flex-wrap  mt-4 font-gordita-medium">
                 {job.remote && (
                   <button
-                    className="px-2 py-1 rounded-md border border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition duration-300 ease-in-out"
+                    className="mr-2 mb-2 px-2 py-1 rounded-md border border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition duration-300 ease-in-out"
                   >
                     100% Remote
                   </button>
                 )}
                 {job.fullTime && (
                   <button
-                    className="px-2 py-1 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out"
+                    className="mr-2 mb-2 px-2 py-1 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out"
                   >
                     Full Time
                   </button>
                 )}
                 {job.internship && (
                   <button
-                    className="px-2 py-1 rounded-md border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300 ease-in-out"
+                    className="mr-2 mb-2 px-2 py-1 rounded-md border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300 ease-in-out"
                   >
                     Internship
                   </button>
                 )}
               </div>
             </div>
-            <button className="flex items-center font-gordita-bold text-2xl text-black px-4 py-2 rounded-md focus:outline-none transition duration-300 ease-in-out hover:text-transparent bg-gradient-to-r from-purple-300 via-violet-800 to-lime-800 bg-clip-text">
+            <button className="mt-4 md:mt-0 ml-0 flex items-center font-gordita-bold text-2xl text-black px-4 py-2 rounded-md focus:outline-none transition duration-300 ease-in-out hover:text-transparent bg-gradient-to-r from-purple-300 via-violet-800 to-lime-800 bg-clip-text">
               Apply
-              <img src={arrow} alt="Apply" className="h-4 w-5 ml-4 mt-2" />
+              <img src={arrow} alt="Apply" className="h-4 w-5 ml-4 mt-1 md:mt-0" />
             </button>
           </div>
         ))}
