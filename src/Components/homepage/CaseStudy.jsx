@@ -46,6 +46,13 @@ const CaseStudy = () => {
     return <span dangerouslySetInnerHTML={{ __html: newTitle }} />;
   };
 
+  // Define gradient colors for each card
+  const gradientColors = [
+    'bg-gradient-to-b from-white to-10% via-[rgba(247,212,93,0.5)] via-30% to-white to-100%',
+    'bg-gradient-to-b from-white to-10% via-[rgba(247,212,93,0.5)] via-30% to-white to-100%',
+    'bg-gradient-to-b from-white to-10% via-[rgba(247,212,93,0.5)] via-30% to-white to-100%',
+  ];
+
   return (
     <div>
       <CSbtns />
@@ -55,44 +62,46 @@ const CaseStudy = () => {
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             {section.switchContent ? (
               <>
-
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-
                   <img
                     className="object-cover object-center rounded"
                     alt="hero"
                     src={section.image}
                   />
                 </div>
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24  md:pr-16 flex flex-col md:items-start md:text-left ml-20 mr-20 mb-16 mt-4 md:mb-0 items-center text-center">
-                  <h1 className="title-font sm:text-4xl text-3xl mb-4  font-gordita-medium text-gray-900">
-                    {highlightKeywords(section.title)}
-                  </h1>
-                  <p className="mb-8  font-gordita-regular leading-relaxed">
-                    {section.description}
-                  </p>
-                  <div className="flex justify-center">
-                    <button className="bg-gray-300 text-black text-lg font-gordita-bold py-4 px-6 rounded-3xl mt-8 flex items-center">
-                      See Case Study
-                      <img className="ml-3 w-4 h-5" src={arrow} alt="Arrow" />
-                    </button>
+                <div className={`lg:flex-grow md:w-1/2 lg:pr-24  md:pr-16 flex flex-col md:items-start md:text-left ml-20 mr-20 mb-16 mt-4 md:mb-0 items-center text-center ${gradientColors[index]}`}>
+                  <div className="bg-opacity-50 p-6 rounded-lg">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4  font-gordita-medium text-gray-900">
+                      {highlightKeywords(section.title)}
+                    </h1>
+                    <p className="mb-8  font-gordita-regular leading-relaxed">
+                      {section.description}
+                    </p>
+                    <div className="flex justify-center">
+                      <button className="bg-gray-300 text-black text-lg font-gordita-bold py-4 px-6 rounded-3xl mt-8 flex items-center">
+                        See Case Study
+                        <img className="ml-3 w-4 h-5" src={arrow} alt="Arrow" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </>
             ) : (
               <>
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                  <h1 className="title-font sm:text-4xl text-3xl mb-4 font-gordita-medium text-gray-900">
-                    {highlightKeywords(section.title)}
-                  </h1>
-                  <p className="mb-8 font-gordita-regular leading-relaxed">
-                    {section.description}
-                  </p>
-                  <div className="flex justify-center">
-                    <button className="bg-gray-300 text-black text-lg font-gordita-bold py-4 px-6 rounded-3xl mt-8 flex items-center">
-                      See Case Study
-                      <img className="ml-3 w-4 h-5" src={arrow} alt="Arrow" />
-                    </button>
+                <div className={`lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ${gradientColors[index]}`}>
+                  <div className="bg-opacity-50 p-6 rounded-lg">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-gordita-medium text-gray-900">
+                      {highlightKeywords(section.title)}
+                    </h1>
+                    <p className="mb-8 font-gordita-regular leading-relaxed">
+                      {section.description}
+                    </p>
+                    <div className="flex justify-center">
+                      <button className="bg-gray-300 text-black text-lg font-gordita-bold py-4 px-6 rounded-3xl mt-8 flex items-center">
+                        See Case Study
+                        <img className="ml-3 w-4 h-5" src={arrow} alt="Arrow" />
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactForm from '../Components/Contact/Contactform';
-import Navbar from '.././elements/Navbar'; // Import the Navbar component
+import Navbar from '.././shared/Navbar'; // Import the Navbar component
 
 const ContactUs = () => {
   return (

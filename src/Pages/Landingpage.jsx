@@ -5,14 +5,16 @@ import Vision from '../Components/homepage/Vision';
 import CaseStudy from '../Components/homepage/CaseStudy';
 import Carrers from '../Components/homepage/Carrers';
 import OurPartners from '../Components/homepage/Partners';
-import Footer from '../elements/Footer';
+import Footer from '../shared/Footer';
 import Latestupdate from '../Components/homepage/Latestupdate';
+// import Tabs from '../Components/homepage/tabs';
 const LandingPage = () => {
   return (
     <div className="app ">
       <HeroContent />
       <WorkingAreas />
       <Vision />
+      {/* <Tabs /> */}
       <CaseStudy />
       <Carrers />
       <OurPartners />

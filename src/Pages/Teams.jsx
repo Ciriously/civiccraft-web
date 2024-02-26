@@ -3,7 +3,7 @@ import facebookLogo from '../assets/socials/meta.png';
 import twitterLogo from '../assets/socials/twitter.png';
 import instagramLogo from '../assets/socials/instagram.png';
 import linkedinLogo from '../assets/socials/linkedin.png';
-import Navbar from '.././elements/Navbar'; // Import the Navbar component
+import Navbar from '.././shared/Navbar'; // Import the Navbar component
 
 const TeamPage = () => {
     const [activeTab, setActiveTab] = useState('Core Founding');

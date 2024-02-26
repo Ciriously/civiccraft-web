@@ -15,7 +15,7 @@ export default function Navbar() {
     return (
         <Disclosure as="nav">
             {({ open }) => (
-                <div className="mx-auto max-w-7xl mt-0 px-2 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-9xl mt-0 px-2 sm:px-6 lg:px-8 bg-white">
                     <div className="relative flex h-20 items-center font-gordita-regular justify-center">
                         <div className="flex items-center justify-between w-full">
                             <img src="/path/to/logo.png" alt="Logo" className="h-12 w-auto sm:h-14" />

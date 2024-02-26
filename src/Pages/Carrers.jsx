@@ -1,6 +1,6 @@
 import React from 'react';
 import Jobs from '../Components/Carrers/Jobs';
-import Navbar from '.././elements/Navbar'; // Import the Navbar component
+import Navbar from '.././shared/Navbar'; // Import the Navbar component
 
 const Careers = () => {
     // Updated job listings data

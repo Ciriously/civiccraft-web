@@ -63,7 +63,7 @@ const HeroCard = ({ heroCardData }) => {
     };
 
     return (
-        <div className="container px-4 mr-40 flex-grow w-full  py-4 sm:py-16 mx-auto px-0 relative">
+        <div className="container px-2  flex-grow w-full  py-4 sm:py-16 mx-auto px-0 relative">
             <div className="mx-auto w-full md:w-4/5 px-2">
                 <div className="container my-8 relative">
                     <div
@@ -87,7 +87,7 @@ const HeroCard = ({ heroCardData }) => {
                                             <h3 className="font-gordita-bold text-gray-800 text-xl mb-2">
                                                 {card.title}
                                             </h3>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" className="h-5 w-5  ml-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" className="h-5 w-5  ml-44">
                                                 <path style={{ fill: '#232326' }} d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right" />
                                             </svg>
                                         </div>
