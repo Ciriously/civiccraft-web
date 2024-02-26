@@ -30,7 +30,7 @@ const HeroContent = () => {
                 </p>
                 <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                   <div className="mt-3 rounded-lg sm:mt-0">
-                    <button className="px-5 py-4 w-auto text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-[#F78D4C] lg:px-10 rounded-2xl hover:[F78D4C] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F78D4C] animate-spin">
+                    <button className="px-5 py-4 w-auto mt-6 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-[#F78D4C] lg:px-10 rounded-3xl hover:[F78D4C] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F78D4C] animate-spin">
                       Get Started
                     </button>
 
@@ -44,9 +44,11 @@ const HeroContent = () => {
           </div>
         </div>
       </section>
-      <div className='container my-auto bg-white max-w-screen'>
+      <div className='container my-auto bg-white max-w-full'>
         <HeroCard heroCardData={heroCardData} />
       </div>
+
+
     </div>
 
 

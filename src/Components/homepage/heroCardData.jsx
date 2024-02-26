@@ -1,6 +1,10 @@
 import React, { useRef } from 'react';
 import h1 from '../../assets/hero/h1.jpg';
 import h2 from '../../assets/hero/h2.jpg';
+import scrollLeftIcon from '../../assets/shared/left.png';
+import scrollRightIcon from '../../assets/shared/right.png';
+
+
 
 const heroCardData = [
     {
@@ -63,7 +67,7 @@ const HeroCard = ({ heroCardData }) => {
     };
 
     return (
-        <div className="container px-2  flex-grow w-full  py-4 sm:py-16 mx-auto px-0 relative">
+        <div className="container px-2  flex-grow w-full  py-4 sm:py-16 mx-auto px-0 relative ">
             <div className="mx-auto w-full md:w-4/5 px-2">
                 <div className="container my-8 relative">
                     <div
@@ -103,8 +107,8 @@ const HeroCard = ({ heroCardData }) => {
                             </div>
                         ))}
                     </div>
-                    <button onClick={scrollLeft} className="absolute right-10 bottom-0 bg-gray-200 px-2 py-1 rounded-md">←</button>
-                    <button onClick={scrollRight} className="absolute right-0 bottom-0 bg-gray-200 px-2 py-1 rounded-md">→</button>
+                    <img onClick={scrollLeft} className="absolute w-auto h-12 right-10 bottom-15  px-8 py-1 rounded-md" src={scrollLeftIcon} alt="Scroll Left" />
+                    <img onClick={scrollRight} className="absolute w-auto h-12  right-0  px-2 py-1 rounded-md" src={scrollRightIcon} alt="Scroll Right" />
                 </div>
             </div>
         </div>
