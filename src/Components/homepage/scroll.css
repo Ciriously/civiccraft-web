@@ -25,13 +25,6 @@
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
 }
-.bg-radial-gradient {
-  background: radial-gradient(
-    80% 50% at 50% -20%,
-    rgba(120, 119, 198, 0.3),
-    rgba(255, 255, 255, 0)
-  );
-}
 
 .scroll-downs {
   position: absolute;

@@ -8,12 +8,18 @@ import OurPartners from '../Components/homepage/Partners';
 import Footer from '../shared/Footer';
 import Latestupdate from '../Components/homepage/Latestupdate';
 // import Tabs from '../Components/homepage/tabs';
+import Approach from '../Components/homepage/Approach';
+
+
+
+
 const LandingPage = () => {
   return (
     <div className="app ">
       <HeroContent />
       <WorkingAreas />
       <Vision />
+      <Approach />
       {/* <Tabs /> */}
       <CaseStudy />
       <Carrers />

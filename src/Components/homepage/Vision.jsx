@@ -5,21 +5,21 @@ const Vision = () => {
   return (
     <>
       {/* Container for demo purpose */}
-      <div className="container my-24 mx-auto md:px-6">
+      <div className="container bg-white  my-24 mx-auto md:px-6">
         {/* Section: Design Block */}
         <section className="mb-32">
-          <h2 className="mb-12  text-center text-3xl font-gordita-bold">
+          <h2 className="mb-12   text-center text-3xl font-gordita-bold">
             Vision.
           </h2>
           <div className="flex flex-wrap items-center">
-            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-6 lg:mb-0 lg:w-5/12">
-
+            {/* Conditionally render the image for larger screens */}
+            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-6 lg:mb-0 lg:w-5/12 hidden md:block">
               <img
                 src="https://demo.themesberg.com/landwind/images/hero.png" alt="hero image"
                 className="w-full"
               />
             </div>
-            <div className="w-full shrink-0 grow-0 basis-auto md:px-6 lg:w-7/12">
+            <div className="w-full  shrink-0 grow-0 basis-auto md:px-6 lg:w-7/12">
               <div className="mb-12 flex">
                 <div className="shrink-0">
                   <div className="rounded-md p-4 shadow-lg bg-[hsl(231,52.6%,20%)] dark:bg-[hsl(231,52.6%,30%)]">
@@ -132,7 +132,7 @@ const Vision = () => {
                     Anticipated benefits at the beginning of the
                     project should match benefits accrued once it is
                     implemented. It includes course correction and actions
-                    to modify a partner’s Ability.
+                    to modify a partner's Ability.
                   </p>
                 </div>
               </div>
