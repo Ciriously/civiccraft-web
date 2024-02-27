@@ -57,8 +57,8 @@ const TeamPage = () => {
     return (
         <section>
             <Navbar />
-            <div className="container px-6 py-10 mx-auto">
-                <h1 className="text-4xl font-gordita-bold text-center text-gray-800 capitalize lg:text-3xl">
+            <div className="container  px-6 py-10 mx-auto">
+                <h1 className="text-4xl  font-gordita-bold text-center text-gray-800 capitalize lg:text-3xl">
                     Team Civiccraft
                 </h1>
                 <p className="max-w-2xl mx-auto font-gordita-medium my-6 text-center text-gray-400">
@@ -66,25 +66,25 @@ const TeamPage = () => {
                     placeat modi magni quia error alias, adipisci rem similique, at omnis
                     eligendi optio eos harum.
                 </p>
-                <div className="flex items-center justify-center">
-                    <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
+                <div className="flex items -center justify-center">
+                    <div className="flex items-center p-1 border border-yellow-600 rounded-xl">
                         <button
-                            className={`px-4 py-2 text-lg font-gordita-medium text-blue capitalize ${activeTab === 'Core Founding' ? 'bg-blue-600' : 'text-blue-600'
+                            className={`px-4 py-2 text-lg font-gordita-medium text-blue capitalize ${activeTab === 'Core Founding' ? 'bg-yellow-300 text-white' : 'text-yellow-600'
                                 } md:py-3 rounded-xl md:px-12`}
                             onClick={() => handleTabClick('Core Founding')}
                         >
                             Core Founding
                         </button>
                         <button
-                            className={`px-4 py-2 mx-4 text-lg font-gordita-medium capitalize transition-colors duration-300 ${activeTab === 'Technical' ? 'bg-blue-600 text-white' : 'text-blue-600 dark:text-blue-400 dark:hover:text-white'
-                                } hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12`}
+                            className={`px-4 py-2 mx-4 text-lg font-gordita-medium capitalize transition-colors duration-300 ${activeTab === 'Technical' ? 'bg-yellow-300 text-white' : 'text-yellow-600'
+                                } hover:bg-yellow-300 hover:text-white rounded-xl md:mx-8 md:px-12`}
                             onClick={() => handleTabClick('Technical')}
                         >
                             Technical
                         </button>
                         <button
-                            className={`px-4 py-2 text-lg font-gordita-medium capitalize transition-colors duration-300 ${activeTab === 'Marketing' ? 'bg-blue-600 text-white' : 'text-blue-600 dark:text-blue-400 dark:hover:text-white'
-                                } hover:bg-blue-600 hover:text-white rounded-xl md:px-12`}
+                            className={`px-4 py-2 text-lg font-gordita-medium capitalize transition-colors duration-300 ${activeTab === 'Marketing' ? 'bg-yellow-600 text-white' : 'text-yellow-600'
+                                } hover:bg-yellow-300 hover:text-white rounded-xl md:px-12`}
                             onClick={() => handleTabClick('Marketing')}
                         >
                             marketing
@@ -96,11 +96,11 @@ const TeamPage = () => {
                     {teamMembers[activeTab].map((member, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <img
-                                className="object-cover  w-full rounded-xl aspect-square"
+                                className="object-cover w-full rounded-xl aspect-square"
                                 src={member.image}
                                 alt={member.name}
                             />
-                            <h1 className="mt-4 text-2xl font-gordita-bold font-semibold text-gray-700 capitalize ">
+                            <h1 className="mt-4 text-2xl font-gordita-bold text-gray-700 capitalize ">
                                 {member.name}
                             </h1>
                             <p className="mt-2 text-gray-800 font-gordita-regular capitalize">
@@ -112,7 +112,7 @@ const TeamPage = () => {
                                     <a
                                         key={index}
                                         href={social.url}
-                                        className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                                        className="mx-2 text-gray-600 hover:text-blue-500"
                                         aria-label={social.label}
                                     >
                                         <img

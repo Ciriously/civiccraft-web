@@ -42,25 +42,25 @@ const Latestupdate = () => {
     ];
 
     return (
-        <div className="max-w-8xl mt-44 mb-28 mx-auto">
-            <h1 className="text-3xl ml-44 font-gordita-bold mt-8 mb-28">Latest Updates</h1>
-            <div className="overflow-x-scroll scrolling-touch flex flex-no-wrap justify-start ml-44 mb-4">
+        <div className="max-w-7xl mx-auto mt-8 mb-28 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-center mb-8">Latest Updates</h1>
+            <div className="overflow-x-auto scrolling-touch flex flex-wrap justify-center">
                 {techBlogs.map((blog, index) => (
-                    <div key={index} className="max-w-sm w-full sm:w-1/2 md:w-1/3 lg:w-1/4 rounded overflow-hidden m-4">
+                    <div key={index} className="max-w-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded overflow-hidden m-4">
                         <img className="w-full" src={blog.image} alt="Blog" />
                         <div className="px-6 py-4">
-                            <div className="font-gordita-medium  text-xl mb-2">{blog.title}</div>
-                            <p className="text-gray-700 font-gordita-regular text-base">{blog.description}</p>
+                            <div className="font-bold text-xl mb-2">{blog.title}</div>
+                            <p className="text-gray-700 text-base">{blog.description}</p>
                         </div>
                         <div className="px-6 pt-4 pb-2 flex items-center justify-between">
-                            <div className="text-sm font-gordita-bold text-gray-600">Read more</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" className="h-5 w-5  ml-2">
+                            <div className="text-sm font-bold text-gray-600">Read more</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" className="h-5 w-5 ml-2">
                                 <path style={{ fill: '#232326' }} d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right" />
                             </svg>
                         </div>
                         <div className="px-6 pt-4 pb-2">
                             {blog.tags.map((tag, index) => (
-                                <span key={index} className={`inline-block rounded-full px-3 py-1 text-sm font-gordita-bold mr-2 mb-2 ${tag.outlineColor} ${tag.textColor}`}>{tag.name}</span>
+                                <span key={index} className={`inline-block rounded-full px-3 py-1 text-sm font-bold mr-2 mb-2 ${tag.outlineColor} ${tag.textColor}`}>{tag.name}</span>
                             ))}
                         </div>
                     </div>
@@ -71,3 +71,5 @@ const Latestupdate = () => {
 }
 
 export default Latestupdate;
+
+

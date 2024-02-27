@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import Solana from '../../assets/casestudy/Solana.svg';
 import Polygon from '../../assets/casestudy/Polygon.png';
 import arrow from '../../assets/arrowupright.svg';
+
 export const CSbtns = () => {
     return (
         <section className="text-gray-600 body-font">
-            <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            <div className="container mx-auto flex px-5  py-24 md:flex-row flex-col items-center">
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center  bg-gradient-to-b from-white to-10% via-[rgba(247,212,93,0.5)] via-50% to-white to-80% ">
+                    <h1 className="title-font  sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                         Blockchain District:
                         Digitizing the Records with Blockchain
                         Platforms
@@ -18,14 +19,14 @@ export const CSbtns = () => {
                     <p className="mb-8 leading-relaxed">
                         This is an additional paragraph of text.
                     </p>
-                    <div className="flex justify-center">
+                    <div className="flex  justify-center">
                         <img
                             className="object-cover object-center rounded w-20 h-20 mr-4"
                             alt="image1"
                             src={Solana}
                         />
                         <img
-                            className="   w-50 h-20"
+                            className="w-50 h-20"
                             alt="image2"
                             src={Polygon}
                         />
@@ -46,7 +47,6 @@ export const CSbtns = () => {
                     />
                 </div>
             </div>
-
         </section>
-    )
-}
+    );
+};

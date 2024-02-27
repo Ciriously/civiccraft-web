@@ -17,7 +17,7 @@ const LandingPage = () => {
   return (
     <div className="app ">
       <HeroContent />
-      <WorkingAreas />
+      {/* <WorkingAreas /> */}
       <Vision />
       <Approach />
       {/* <Tabs /> */}
