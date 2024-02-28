@@ -5,7 +5,7 @@ const Vision = () => {
   return (
     <>
       {/* Container for demo purpose */}
-      <div className="container bg-white  my-24 mx-auto md:px-6">
+      <div className="container bg-white mt-96 my-24 mx-auto md:px-6">
         {/* Section: Design Block */}
         <section className="mb-32">
           <h2 className="mb-12   text-center text-3xl font-gordita-bold">

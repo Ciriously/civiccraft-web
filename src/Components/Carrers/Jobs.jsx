@@ -64,10 +64,12 @@ const Jobs = ({ jobListings }) => {
                 )}
               </div>
             </div>
-            <button className="mt-4 md:mt-0 ml-0 flex items-center font-gordita-bold text-2xl text-black px-4 py-2 rounded-md focus:outline-none transition duration-300 ease-in-out hover:text-transparent bg-gradient-to-r from-purple-300 via-violet-800 to-lime-800 bg-clip-text">
-              Apply
-              <img src={arrow} alt="Apply" className="h-4 w-5 ml-4 mt-1 md:mt-0" />
-            </button>
+            <a href="https://form.jotform.com/240506388876468" target="_blank" rel="noopener noreferrer">
+              <button className="mt-4 md:mt-0 ml-0 flex items-center font-gordita-bold text-2xl text-black px-4 py-2 rounded-md focus:outline-none transition duration-300 ease-in-out hover:text-transparent bg-gradient-to-r from-purple-300 via-violet-800 to-lime-800 bg-clip-text">
+                Apply
+                <img src={arrow} alt="Apply" className="h-4 w-5 ml-4 mt-1 md:mt-0" />
+              </button>
+            </a>
           </div>
         ))}
       </div>

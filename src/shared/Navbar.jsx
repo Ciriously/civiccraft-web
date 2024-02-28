@@ -5,9 +5,11 @@ import logo from "../assets/shared/logo.svg";
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
+    { name: 'Working Areas', href: '/about', current: false },
     { name: 'Careers', href: '/careers', current: false },
+    { name: 'Blogs', href: '/teams', current: false },
     { name: 'Team', href: '/teams', current: false },
-    { name: 'Contact Us', href: '/contact', current: false }
+    { name: 'Contact Us', href: '/contact', current: false },
 ];
 
 export default function Navbar() {
@@ -21,7 +23,7 @@ export default function Navbar() {
     return (
         <header className="flex flex-wrap mt-8 text-lg sm:justify-start sm:flex-nowrap z-50 w-full bg-white  py-3 sm:py-0">
             <nav
-                className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+                className="relative max-w-7xl w-full mx-auto px-6 sm:flex sm:items-center sm:justify-between sm:px-8 lg:px-8"
                 aria-label="Global"
             >
                 <div className="flex items-center justify-between">
