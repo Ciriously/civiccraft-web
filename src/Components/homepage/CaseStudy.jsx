@@ -14,20 +14,20 @@ const sectionsData = [
     switchContent: false // Image on the left, content on the right
   },
   {
-    title: 'Before they sold out readymade gluten',
-    description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.',
+    title: 'Empowering Municipalities with Cutting-Edge Technology and Data Analytics',
+    description: 'We Civiccraft serves as a gateway to innovative solutions designed to transform municipal governance. Leveraging advanced technologies such as Machine Learning and Data Analytics, we enable municipalities to make informed decisions, optimize resource allocation, and enhance service delivery for their communities.',
     image: cs3,
     switchContent: true // Content on the left, image on the right
   },
   {
-    title: 'Before they sold out readymade gluten',
-    description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.',
+    title: 'Revolutionizing Farming in Maharashtra: Collaborative Tech Solutions with District Administration - Ratnagiri.',
+    description: 'At Civiccraft, where we`re at the forefront of revolutionizing farming practices. In collaboration with the District Agriculture Department of Ratnagiri and the State Agricultural Department of Maharashtra, we`ve developed cutting-edge solutions. Our innovative tech-driven Machine Learning solutions, comprising mobile apps and websites, empower farmers with tools to boost productivity, streamline resource management, and promote sustainable agricultural methods.',
     image: cs4,
     switchContent: false // Image on the left, content on the right
   },
   {
-    title: 'Before  sold out readymade gluten',
-    description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.',
+    title: 'Transforming Rural Livelihoods with Tech-Driven Solutions: Partnership with UPSRLM',
+    description: 'We at Civiccraft showcases pioneering initiatives in collaboration with the Uttar Pradesh State Rural Livelihood Mission (UPSRLM) to revolutionize workforce management and empower self-help groups through innovative technological and AI-powered solutions. From optimizing resource utilization to fostering sustainable community development, explore how we`re driving positive change in Uttar Pradesh`s rural landscape.',
     image: cs2,
     switchContent: true // Content on the left, image on the right
   },
@@ -43,11 +43,12 @@ const keywords = [
 
 const CaseStudy = () => {
   // Function to replace keywords in title with colored spans
+  // Function to replace keywords in title with colored and bold spans
   const highlightKeywords = (title) => {
     let newTitle = title;
     keywords.forEach(({ keyword, color }) => {
       const regex = new RegExp(keyword, 'gi'); // Case-insensitive global match
-      newTitle = newTitle.replace(regex, `<span style="color: ${color};">${keyword}</span>`);
+      newTitle = newTitle.replace(regex, `<strong style="color: ${color};">${keyword}</strong>`);
     });
     return <span dangerouslySetInnerHTML={{ __html: newTitle }} />;
   };

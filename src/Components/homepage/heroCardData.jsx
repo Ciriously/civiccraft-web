@@ -7,14 +7,14 @@ import scrollRightIcon from '../../assets/shared/right.png';
 const heroCardData = [
     {
         imageUrl: h1,
-        title: 'Some title goes here',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
+        title: 'Healthare',
+        description: 'Decision-making support and models to help civic authorities respond to the pandemic.',
         link: '#',
         color: 'blue'
     },
     {
         imageUrl: h2,
-        title: 'Some title goes here',
+        title: 'Agri-Tech',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
         link: '#',
         color: 'green'

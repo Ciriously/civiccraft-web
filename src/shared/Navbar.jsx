@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Disclosure } from '@headlessui/react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from "../assets/shared/logo.svg";
+import WorkingAreas from '../Components/homepage/WorkingAreas';
+
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
-    { name: 'Working Areas', href: '/about', current: false },
+    { name: 'Working Areas', href: '#WorkingAreas', current: false }, // Updated href to scroll to WorkingAreas component
     { name: 'Careers', href: '/careers', current: false },
     { name: 'Blogs', href: '/teams', current: false },
     { name: 'Team', href: '/teams', current: false },
@@ -13,8 +14,8 @@ const navigation = [
 ];
 
 export default function Navbar() {
-    const location = useLocation(); // Get current location using useLocation hook
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to track dropdown visibility
+    const location = useLocation();
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
@@ -42,8 +43,8 @@ export default function Navbar() {
                         <button
                             type="button"
                             className="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                            onClick={toggleDropdown} // Add onClick event to toggle dropdown
-                            aria-expanded={isDropdownOpen ? 'true' : 'false'} // Accessibility attribute
+                            onClick={toggleDropdown}
+                            aria-expanded={isDropdownOpen ? 'true' : 'false'}
                         >
                             <svg
                                 className={`hs-collapse-open:hidden size-4 ${isDropdownOpen ? 'hidden' : 'block'}`}
@@ -88,7 +89,6 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
-                            {/* Dropdown menu content */}
                             <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2">
                                 <a
                                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"

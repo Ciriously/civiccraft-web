@@ -22,13 +22,13 @@ const WorkingAreas = ({
   };
 
   return (
-    <>
+    <div id="WorkingAreas">
       <h2 className="mb-12   text-center text-3xl font-gordita-bold md:mt-0 mt-20 ">
         Working Areas.
       </h2>
       <div
         className={cn(
-          "flex  flex-column justify-center font-gordita-medium [perspective:1000px] relative    no-visible-scrollbar max-w-full w-full md:mb-0 mb-8 md:px-0 px-10 ",
+          "flex  flex-column justify-center font-gordita-medium [perspective:1000px] relative  overflow-auto sm:overflow-visible  no-visible-scrollbar max-w-full w-full md: mb-8 md:px-0 px-10 ",
           containerClassName
         )}
       >
@@ -69,7 +69,7 @@ const WorkingAreas = ({
         hovering={hovering}
         className={cn("mt-10  ", contentClassName)}
       />
-    </>
+    </div>
   );
 };
 
@@ -92,7 +92,7 @@ const FadeInDiv = ({ className, tabs, hovering }) => {
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("w-2/3 rounded-2xl md:w-1/2 font-gordita-regular text-white md:h-full md:py-40 md:px-10 px-5 py-5 absolute top-1/2 md:left-1/4  transform -translate-x-1/2 -translate-y-1/2 bg-[#F78D4C] flex items-center justify-center md:overflow-none  md:ml-0 ml-1", className)}
+          className={cn("w-full rounded-2xl md:w-1/2 font-gordita-regular text-white md:h-full md:py-40 md:px-10 px-5 py-5 absolute top-1/2 md:left-1/4  transform -translate-x-1/2 -translate-y-1/2 bg-[#F78D4C] flex items-center justify-center md:overflow-none  md:ml-0 ml-1", className)}
 
 
 
