@@ -8,16 +8,16 @@ export const CSbtns = () => {
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5  py-24 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center  bg-gradient-to-b from-white to-10% via-[rgba(247,212,93,0.5)] via-50% to-white to-80% ">
-                    <h1 className="title-font  sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                    <h1 className="title-font  sm:text-4xl text-3xl mb-4 font-gordita-medium text-gray-900">
                         Blockchain District:
                         Digitizing the Records with Blockchain
                         Platforms
                     </h1>
-                    <p className="mb-8 leading-relaxed">
-                        Through partnerships with the District Healthcare Department of Ratnagiri and the State Healthcare Department of Maharashtra, we've developed groundbreaking tech-driven Machine Learning solutions. These solutions, crafted in collaboration with primary health care centers, provide decision-makers with invaluable data-driven insights.
+                    <p className="mb-8 font-gordita-regular leading-relaxed">
+                        Blockchain District is at the forefront of digitizing records using blockchain platforms. Our innovative solutions ensure secure, transparent, and tamper-proof record-keeping, revolutionizing data management for businesses and organizations. With cutting-edge blockchain technology, we offer efficient and reliable solutions to safeguard valuable records and streamline processes for enhanced productivity and trust.
                     </p>
-                    <p className="mb-8 leading-relaxed">
-                        This is an additional paragraph of text.
+                    <p className="mb-8 font-gordita-bold leading-relaxed">
+                        In collaboration with:
                     </p>
                     <div className="flex  justify-center">
                         <img
@@ -39,11 +39,11 @@ export const CSbtns = () => {
                         </button>
                     </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="lg:max-w-xl mb-24 lg:w-full md:w-1/2 w-5/6">
                     <img
                         className="object-cover object-center rounded"
                         alt="hero"
-                        src="https://dummyimage.com/720x600"
+                        src="https://readwrite.com/wp-content/uploads/2019/09/6-Industries-Blockchain-Technology-Will-Revolutionize-825x500.jpg"
                     />
                 </div>
             </div>

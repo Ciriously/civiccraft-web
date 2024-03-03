@@ -35,9 +35,9 @@ const Latestupdate = () => {
         <div id="Latestupdate">
 
             <div>
-                <section className="m-auto flex w-full max-w-screen-2xl flex-col gap-12 px-6 py-12 md:px-16 2xl:px-32 2xl:py-16">
+                <section className="m-auto flex w-full font-gordita-medium max-w-screen-2xl flex-col gap-12 px-6 py-12 md:px-16 2xl:px-32 2xl:py-16">
                     <div className="flex justify-between">
-                        <h3 className="text-4xl font-semibold text-slate-950">Blog</h3>
+                        <h3 className="text-4xl font-semibold text-slate-950">latest Updates</h3>
                     </div>
                     <div className="grid w-full grid-flow-row gap-x-0 gap-y-6 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
                         {blogPosts.map(post => (
@@ -51,21 +51,21 @@ const Latestupdate = () => {
                                 </div>
                                 <div className="flex flex-col items-start gap-3">
                                     <p className="inline-flex items-center justify-start gap-2">
-                                        <span className="text-xs leading-none text-slate-400">Categories</span>
-                                        {post.categories.map((category, index) => (
+                                        {/* <span className="text-xs leading-none text-slate-400">Categories</span> */}
+                                        {/* {post.categories.map((category, index) => (
                                             <span key={index} className="size-1.5 rounded-full bg-blue-700" />
                                         ))}
-                                        <span className="text-xs leading-none text-slate-400">{post.readTime}</span>
+                                        <span className="text-xs leading-none text-slate-400">{post.readTime}</span> */}
                                     </p>
                                     <div className="flex flex-col gap-2">
-                                        <h3 className="text-2xl font-semibold">{post.title}</h3>
-                                        <h4 className="max-w-[90%] text-sm leading-tight text-slate-400">{post.description}</h4>
+                                        <h3 className="text-2xl px-2 font-semibold">{post.title}</h3>
+                                        <h4 className="max-w-[90%] text-sm px-2 leading-tight text-slate-400">{post.description}</h4>
                                     </div>
                                     <button
                                         type="button"
                                         className="group inline-flex items-center justify-center whitespace-nowrap rounded-lg align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-blue-700 text-blue-600 h-[42px] min-w-[42px] gap-2 disabled:stroke-slate-400 disabled:text-slate-400 hover:stroke-blue-950 hover:text-blue-950 p-0"
                                     >
-                                        <span>Read More</span>
+                                        {/* <span>Read More</span>
                                         <svg
                                             width={24}
                                             height={24}
@@ -82,7 +82,7 @@ const Latestupdate = () => {
                                                 strokeLinejoin="round"
                                             />
                                             <circle cx={12} cy={12} r={9} />
-                                        </svg>
+                                        </svg> */}
                                     </button>
                                 </div>
                             </div>

@@ -20,7 +20,7 @@ const TeamPage = () => {
     const teamMembers = {
         'Core Founding': [
             {
-                name: 'R. Arabhaya Yadav',
+                name: 'R. Arabhaya',
                 role: 'App Developer ',
                 image: Arabhya,
                 socials: [
@@ -42,7 +42,7 @@ const TeamPage = () => {
                 ]
             },
             {
-                name: 'R. Animesh Yadav',
+                name: 'R. Animesh',
                 role: 'Research Lead',
                 image: Animesh,
                 socials: [

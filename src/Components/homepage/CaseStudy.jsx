@@ -28,7 +28,7 @@ const sectionsData = [
   {
     title: 'Transforming Rural Livelihoods with Tech-Driven Solutions: Partnership with UPSRLM',
     description: 'We at Civiccraft showcases pioneering initiatives in collaboration with the Uttar Pradesh State Rural Livelihood Mission (UPSRLM) to revolutionize workforce management and empower self-help groups through innovative technological and AI-powered solutions. From optimizing resource utilization to fostering sustainable community development, explore how we`re driving positive change in Uttar Pradesh`s rural landscape.',
-    image: cs2,
+    image: 'https://images.unsplash.com/photo-1599394327680-00dd99ceebb1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     switchContent: true // Content on the left, image on the right
   },
 ];
@@ -82,7 +82,7 @@ const CaseStudy = () => {
                 </div>
                 <div className={`lg:flex-grow md:w-1/2 lg:pr-24  md:pr-16 flex flex-col md:items-start md:text-left ml-20 mr-20 mb-16 mt-4 md:mb-0 items-center text-center ${gradientColors[index]}`}>
                   <div className="bg-opacity-50 p-6 rounded-lg">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 w-[20rem] font-gordita-medium text-gray-900">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 w-[23rem] font-gordita-medium text-gray-900">
                       {highlightKeywords(section.title)}
                     </h1>
                     <p className="mb-8 font-gordita-regular leading-relaxed ">
