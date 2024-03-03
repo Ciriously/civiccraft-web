@@ -7,7 +7,7 @@ import scrollRightIcon from '../../assets/shared/right.png';
 const heroCardData = [
     {
         imageUrl: h1,
-        title: 'Healthare',
+        title: 'Healthcare',
         description: 'Decision-making support and models to help civic authorities respond to the pandemic.',
         link: '#',
         color: 'blue'
@@ -20,33 +20,27 @@ const heroCardData = [
         color: 'green'
     },
     {
-        imageUrl: h1,
+        imageUrl: 'https://socialmobie.com/public/blog/36/80/01/6aaf80e0988f337553bbb1e6da14b2ce.png',
         title: 'Some title goes here',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
         link: '#',
         color: 'blue'
     },
     {
-        imageUrl: h2,
-        title: 'Some title goes here',
+        imageUrl: 'https://jungleworks.com/wp-content/uploads/2020/05/shutterstock_1604386048-1-1024x512.jpg',
+        title: ' E-governance',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
         link: '#',
         color: 'green'
     },
     {
-        imageUrl: h1,
-        title: 'Some title goes here',
+        imageUrl: 'https://pbs.twimg.com/media/FoR_urDaAAEPps-.jpg',
+        title: 'Tourism',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
         link: '#',
         color: 'blue'
     },
-    {
-        imageUrl: h2,
-        title: 'Some title goes here',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae, consequatur corrupti vel quisquam id itaque nam',
-        link: '#',
-        color: 'green'
-    }
+
 ];
 
 const HeroCard = ({ heroCardData }) => {

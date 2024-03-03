@@ -43,7 +43,7 @@ const LandingPage = () => {
     {
       title: "Tourism",
       value: "Tourism",
-      content: "Empowering governments with intelligent solutions is at the core of our mission. By leveraging advanced technologies, including machine learning, big data analytics, and IoT, we are redefining governance practices. Our solutions streamline bureaucratic processes, improve decision-making, and foster greater citizen engagement, ultimately leading to more transparent, efficient, and responsive governance.",
+      content: "As a B2G company collaborating with government tourism authorities, we specialize in delivering cutting-edge technological solutions aimed at enhancing tourism experiences. Currently, we're focused on developing tailored mobile applications for specific destinations, empowering tourists with seamless navigation, personalized recommendations, and interactive features. Additionally, we're pioneering the use of WhatsApp tourism chatbots to provide instant assistance, real-time updates, and booking capabilities. Furthermore, our latest endeavor involves crafting an application dedicated to Ayodhya, offering comprehensive guides, historical insights, and religious itineraries to enrich pilgrims' experiences and promote sustainable tourism in the region.",
     }
   ];
 

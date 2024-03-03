@@ -92,7 +92,7 @@ const FadeInDiv = ({ className, tabs, hovering }) => {
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("w-full rounded-2xl md:w-1/2 font-gordita-medium text-white md:h-full md:py-40 md:px-10 px-5 py-5 absolute top-1/2 md:left-1/4  transform -translate-x-1/2 -translate-y-1/2 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-cyan-700 via-red-600 to-fuchsia-600 flex items-center justify-center md:overflow-none  md:ml-0 ml-1", className)}
+          className={cn("w-full rounded-2xl md:w-1/2 font-gordita-medium text-white md:h-full md:py-40 md:px-10 px-5 py-5 absolute top-1/2 md:left-1/4  transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-tl from-slate-800 via-violet-500 to-zinc-400 flex items-center justify-center md:overflow-none  md:ml-0 ml-1", className)}
 
 
 

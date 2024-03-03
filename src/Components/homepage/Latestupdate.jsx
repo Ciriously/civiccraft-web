@@ -1,29 +1,32 @@
 import React from 'react';
+import img1 from '../../assets/blogs/1.png';
+import img2 from '../../assets/blogs/2.jpg';
+import img3 from '../../assets/blogs/3.jpg';
 
 const blogPosts = [
     {
         id: 1,
-        image: 'https://www.tailframes.com/images/illustration-2.webp',
+        image: img1,
         categories: ['Category 1', 'Category 2'],
         readTime: '4 min. read',
-        title: 'Blog Post Heading 1',
-        description: 'We\'ve done it carefully and simply. Combined with the ingredients makes for beautiful landings.'
+        title: 'AI-Driven Traffic Management',
+        description: ' Revolutionize urban mobility with real-time insights and optimized routing.'
     },
     {
         id: 2,
-        image: 'https://www.tailframes.com/images/illustration.webp',
+        image: img2,
         categories: ['Category 3', 'Category 4'],
         readTime: '5 min. read',
-        title: 'Blog Post Heading 2',
-        description: 'Another blog post description here.'
+        title: 'AI-Powered Public Health Surveillance',
+        description: 'Early detection and rapid response to disease outbreaks for healthier communities.'
     },
     {
         id: 3,
-        image: 'https://www.tailframes.com/images/illustration-3.webp',
+        image: img3,
         categories: ['Category 5', 'Category 6'],
         readTime: '3 min. read',
-        title: 'Blog Post Heading 3',
-        description: 'Yet another blog post description.'
+        title: 'ML Automation for Government Procurement',
+        description: 'Streamlined processes, transparent decisions, and cost savings in procurement.'
     }
 ];
 
@@ -43,7 +46,7 @@ const Latestupdate = () => {
                                     <img
                                         src={post.image}
                                         alt=""
-                                        className="h-[134px] w-[235px] -translate-x-1/4"
+                                        className="object-cover h-full w-full"
                                     />
                                 </div>
                                 <div className="flex flex-col items-start gap-3">

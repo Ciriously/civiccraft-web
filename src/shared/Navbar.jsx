@@ -32,11 +32,8 @@ export default function Navbar() {
     };
 
     return (
-        <header className="flex flex-wrap mt-8 text-lg sm:justify-start sm:flex-nowrap z-50 w-full bg-white  py-3 sm:py-0">
-            <nav
-                className="relative max-w-7xl w-full mx-auto px-6 sm:flex sm:items-center sm:justify-between sm:px-8 lg:px-8"
-                aria-label="Global"
-            >
+        <header className="sticky top-0 z-50 bg-white py-3">
+            <nav className="max-w-7xl mx-auto px-6 sm:flex sm:items-center sm:justify-between">
                 <div className="flex items-center justify-between">
                     <a
                         className="flex-none"

@@ -100,7 +100,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="border border-gray-300 rounded-lg">
+        <div className="border border-yellow-300 rounded-lg">
             <form className="bg-white font-gordita-medium rounded-t-lg px-8 pt-10 md:pt-40 pb-8 mb-4">
                 {/* Full Name */}
                 <div className="mb-4">
@@ -227,13 +227,20 @@ const ContactForm = () => {
 
                 {/* Submit Button */}
                 <div className="flex items-center justify-center">
-                    <button
-                        onClick={handleSubmit}
-                        className="bg-blue-500 text-white font-bold py-2 px-6 rounded focus:outline-none text-lg transform transition duration-500 ease-in-out hover:scale-110"
-                        type="button"
-                    >
-                        Send
-                    </button>
+
+
+                    <div className="flex flex-wrap justify-center gap-6">
+                        <button
+                            className="relative"
+                            onClick={handleSubmit}
+                        >
+                            <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-black" />
+                            <span className="fold-bold relative inline-block h-full w-full rounded border-2 border-black bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900 ">
+                                Send
+                            </span>
+                        </button>
+                    </div>
+
                 </div>
             </form>
         </div>

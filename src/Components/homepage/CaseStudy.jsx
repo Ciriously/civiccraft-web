@@ -37,8 +37,14 @@ const sectionsData = [
 const keywords = [
   { keyword: 'Maharashtra', color: '#FF5733' },
   { keyword: 'they', color: '#33FF6A' },
-  { keyword: 'gluten', color: '#33B4FF' },
+  { keyword: 'Tech-Driven Solutions', color: '#33B4FF' },
   { keyword: 'Healthcare ', color: '#FF33E9' },
+  { keyword: 'Machine Learning', color: '#FF33E9' },
+  { keyword: 'Data Analytics', color: '#FF33E9' },
+  { keyword: 'Municipalities', color: '#FF33E9' },
+  { keyword: 'Farming', color: '#FF33E9' },
+  { keyword: 'Rural Livelihoods', color: '#FF33E9' },
+  { keyword: 'UPSRLM', color: '#FF33E9' },
 ];
 
 const CaseStudy = () => {
@@ -76,7 +82,7 @@ const CaseStudy = () => {
                 </div>
                 <div className={`lg:flex-grow md:w-1/2 lg:pr-24  md:pr-16 flex flex-col md:items-start md:text-left ml-20 mr-20 mb-16 mt-4 md:mb-0 items-center text-center ${gradientColors[index]}`}>
                   <div className="bg-opacity-50 p-6 rounded-lg">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4  font-gordita-medium text-gray-900">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 w-[20rem] font-gordita-medium text-gray-900">
                       {highlightKeywords(section.title)}
                     </h1>
                     <p className="mb-8 font-gordita-regular leading-relaxed ">
