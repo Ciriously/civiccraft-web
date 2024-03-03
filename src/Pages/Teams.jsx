@@ -3,7 +3,12 @@ import facebookLogo from '../assets/socials/meta.png';
 import twitterLogo from '../assets/socials/twitter.png';
 import instagramLogo from '../assets/socials/instagram.png';
 import linkedinLogo from '../assets/socials/linkedin.png';
-import Navbar from '.././shared/Navbar'; // Import the Navbar component
+import gmail from '../assets/socials/gmail.png';
+import Navbar from '.././shared/Navbar';
+import Arabhya from '../assets/Team/Arabhya.jpeg';
+import Animesh from '../assets/Team/Animesh.jpeg';
+import Prerna from '../assets/Team/Prerana.jpg';
+import Chinmay from '../assets/Team/Chinmay.jpg';
 
 const TeamPage = () => {
     const [activeTab, setActiveTab] = useState('Core Founding');
@@ -12,61 +17,75 @@ const TeamPage = () => {
         setActiveTab(tab);
     };
 
-    // Dummy team member data
+    // Team member data
     const teamMembers = {
         'Core Founding': [
             {
-                name: 'Arthur Melo', role: 'Design Director', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', socials: [
-                    { icon: facebookLogo, url: '#', label: 'Facebook' },
-                    { icon: twitterLogo, url: '#', label: 'Twitter' },
-                    { icon: instagramLogo, url: '#', label: 'Instagram' },
-                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
+                name: 'R. Arabhaya Yadav',
+                role: 'Design Director',
+                image: Arabhya,
+                socials: [
+                    // { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: gmail, url: 'mailto:arabhaya@civiccraft.in', label: 'Email' },
+                    { icon: instagramLogo, url: 'https://www.instagram.com/arabhya07/', label: 'Instagram' },
+                    { icon: linkedinLogo, url: 'https://www.linkedin.com/in/r-arabhya-70b487238/', label: 'LinkedIn' }
                 ]
             },
             {
-                name: 'Arthur Melo', role: 'Design Director', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', socials: [
-                    { icon: facebookLogo, url: '#', label: 'Facebook' },
-                    { icon: twitterLogo, url: '#', label: 'Twitter' },
-                    { icon: instagramLogo, url: '#', label: 'Instagram' },
-                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
+                name: 'Chinmay Awade',
+                role: 'Design Director',
+                image: Chinmay,
+                socials: [
+                    // { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: gmail, url: 'mailto:chinmay@civiccraft.in', label: 'Twitter' },
+                    { icon: instagramLogo, url: 'https://www.instagram.com/alatus1904/', label: 'Instagram' },
+                    { icon: linkedinLogo, url: 'https://www.linkedin.com/in/chinmay4012/', label: 'LinkedIn' }
                 ]
             },
+            {
+                name: 'R. Animesh Yadav',
+                role: 'Design Director',
+                image: Animesh,
+                socials: [
+                    // { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: gmail, url: 'mailto:animesh@civiccraft.in', label: 'Twitter' },
+                    { icon: instagramLogo, url: 'https://www.instagram.com/i.amanimesh/', label: 'Instagram' },
+                    { icon: linkedinLogo, url: 'https://www.linkedin.com/in/animeshmedibey/', label: 'LinkedIn' }
+                ]
+            },
+            {
+                name: 'Prerana Bhandari',
+                role: 'Design Director',
+                image: Prerna,
+                socials: [
+                    // { icon: facebookLogo, url: '#', label: 'Facebook' },
+                    { icon: gmail, url: 'mailto:prerana@civiccraft.in', label: 'Twitter' },
+                    { icon: instagramLogo, url: 'https://www.linkedin.com/in/prerana-bhandari-01865721b/', label: 'Instagram' },
+                    { icon: linkedinLogo, url: 'https://www.linkedin.com/in/animeshmedibey/', label: 'LinkedIn' }
+                ]
+            },
+
         ],
+
         'Technical': [
-            {
-                name: 'John Doe', role: 'Lead Developer', image: 'https://via.placeholder.com/150', socials: [
-                    { icon: facebookLogo, url: '#', label: 'Facebook' },
-                    { icon: twitterLogo, url: '#', label: 'Twitter' },
-                    { icon: instagramLogo, url: '#', label: 'Instagram' },
-                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
-                ]
-            },
+            // Add technical team members here
         ],
         'Marketing': [
-            {
-                name: 'Michael Johnson', role: 'Marketing Manager', image: 'https://via.placeholder.com/150', socials: [
-                    { icon: facebookLogo, url: '#', label: 'Facebook' },
-                    { icon: twitterLogo, url: '#', label: 'Twitter' },
-                    { icon: instagramLogo, url: '#', label: 'Instagram' },
-                    { icon: linkedinLogo, url: '#', label: 'LinkedIn' }
-                ]
-            },
+            // Add marketing team members here
         ],
     };
 
     return (
         <section>
             <Navbar />
-            <div className="container  px-6 py-10 mx-auto">
-                <h1 className="text-4xl  font-gordita-bold text-center text-gray-800 capitalize lg:text-3xl">
+            <div className="container px-6 py-10 mx-auto">
+                <h1 className="text-4xl font-gordita-bold text-center text-gray-800 capitalize lg:text-3xl">
                     Team Civiccraft
                 </h1>
                 <p className="max-w-2xl mx-auto font-gordita-medium my-6 text-center text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex
-                    placeat modi magni quia error alias, adipisci rem similique, at omnis
-                    eligendi optio eos harum.
+                    Meet our team of talented individuals dedicated to making a difference.
                 </p>
-                <div className="flex items -center justify-center">
+                <div className="flex items-center justify-center">
                     <div className="flex items-center p-1 border border-yellow-600 rounded-xl">
                         <button
                             className={`px-4 py-2 text-lg font-gordita-medium text-blue capitalize ${activeTab === 'Core Founding' ? 'bg-yellow-300 text-white' : 'text-yellow-600'
@@ -87,7 +106,7 @@ const TeamPage = () => {
                                 } hover:bg-yellow-300 hover:text-white rounded-xl md:px-12`}
                             onClick={() => handleTabClick('Marketing')}
                         >
-                            marketing
+                            Marketing
                         </button>
                     </div>
                 </div>
