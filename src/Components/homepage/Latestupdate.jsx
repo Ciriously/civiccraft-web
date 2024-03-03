@@ -1,75 +1,91 @@
 import React from 'react';
 
+const blogPosts = [
+    {
+        id: 1,
+        image: 'https://www.tailframes.com/images/illustration-2.webp',
+        categories: ['Category 1', 'Category 2'],
+        readTime: '4 min. read',
+        title: 'Blog Post Heading 1',
+        description: 'We\'ve done it carefully and simply. Combined with the ingredients makes for beautiful landings.'
+    },
+    {
+        id: 2,
+        image: 'https://www.tailframes.com/images/illustration.webp',
+        categories: ['Category 3', 'Category 4'],
+        readTime: '5 min. read',
+        title: 'Blog Post Heading 2',
+        description: 'Another blog post description here.'
+    },
+    {
+        id: 3,
+        image: 'https://www.tailframes.com/images/illustration-3.webp',
+        categories: ['Category 5', 'Category 6'],
+        readTime: '3 min. read',
+        title: 'Blog Post Heading 3',
+        description: 'Yet another blog post description.'
+    }
+];
+
 const Latestupdate = () => {
-    const techBlogs = [
-        {
-            title: 'The Coldest Sunset',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-            tags: [
-                { name: '#Machine Learning', outlineColor: 'bg-blue-500', textColor: 'text-white' },
-                { name: '#Data Science', outlineColor: 'bg-green-500', textColor: 'text-white' }
-            ],
-            image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        },
-        {
-            title: 'Tech Blog 2',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-            tags: [
-                { name: '#Tech', outlineColor: 'bg-yellow-500', textColor: 'text-black' },
-                { name: '#Programming', outlineColor: 'bg-red-500', textColor: 'text-white' }
-            ],
-            image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        },
-        {
-            title: 'AI Revolution',
-            description: 'Artificial Intelligence is revolutionizing the world. Learn how AI is changing the tech industry.',
-            tags: [
-                { name: '#AI', outlineColor: 'bg-purple-500', textColor: 'text-white' },
-                { name: '#Tech', outlineColor: 'bg-yellow-500', textColor: 'text-black' }
-            ],
-            image: 'https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        },
-        {
-            title: 'The Future of Programming',
-            description: 'Explore the future trends in programming. What languages and frameworks are on the rise?',
-            tags: [
-                { name: '#Programming', outlineColor: 'bg-red-500', textColor: 'text-white' },
-                { name: '#Future', outlineColor: 'bg-green-500', textColor: 'text-white' }
-            ],
-            image: 'https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        },
-
-    ];
-
     return (
-        <div className="max-w-7xl mx-auto mt-8 mb-28 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-center mb-8">Latest Updates</h1>
-            <div className="overflow-x-auto scrolling-touch flex flex-wrap justify-center">
-                {techBlogs.map((blog, index) => (
-                    <div key={index} className="max-w-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded overflow-hidden m-4">
-                        <img className="w-full" src={blog.image} alt="Blog" />
-                        <div className="px-6 py-4">
-                            <div className="font-bold text-xl mb-2">{blog.title}</div>
-                            <p className="text-gray-700 text-base">{blog.description}</p>
+        <div>
+            <section className="m-auto flex w-full max-w-screen-2xl flex-col gap-12 px-6 py-12 md:px-16 2xl:px-32 2xl:py-16">
+                <div className="flex justify-between">
+                    <h3 className="text-4xl font-semibold text-slate-950">Blog</h3>
+                </div>
+                <div className="grid w-full grid-flow-row gap-x-0 gap-y-6 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
+                    {blogPosts.map(post => (
+                        <div key={post.id} className="flex max-w-[600px] flex-col items-start gap-6 overflow-hidden">
+                            <div className="flex h-[280px] w-full items-center justify-center overflow-hidden rounded-3xl bg-slate-100 md:h-[310px] center">
+                                <img
+                                    src={post.image}
+                                    alt=""
+                                    className="h-[134px] w-[235px] -translate-x-1/4"
+                                />
+                            </div>
+                            <div className="flex flex-col items-start gap-3">
+                                <p className="inline-flex items-center justify-start gap-2">
+                                    <span className="text-xs leading-none text-slate-400">Categories</span>
+                                    {post.categories.map((category, index) => (
+                                        <span key={index} className="size-1.5 rounded-full bg-blue-700" />
+                                    ))}
+                                    <span className="text-xs leading-none text-slate-400">{post.readTime}</span>
+                                </p>
+                                <div className="flex flex-col gap-2">
+                                    <h3 className="text-2xl font-semibold">{post.title}</h3>
+                                    <h4 className="max-w-[90%] text-sm leading-tight text-slate-400">{post.description}</h4>
+                                </div>
+                                <button
+                                    type="button"
+                                    className="group inline-flex items-center justify-center whitespace-nowrap rounded-lg align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-blue-700 text-blue-600 h-[42px] min-w-[42px] gap-2 disabled:stroke-slate-400 disabled:text-slate-400 hover:stroke-blue-950 hover:text-blue-950 p-0"
+                                >
+                                    <span>Read More</span>
+                                    <svg
+                                        width={24}
+                                        height={24}
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="#1D4ED8"
+                                        strokeWidth="1.5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="size-6 stroke-inherit"
+                                    >
+                                        <path
+                                            d="M11 16L15 12L11 8"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        />
+                                        <circle cx={12} cy={12} r={9} />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div className="px-6 pt-4 pb-2 flex items-center justify-between">
-                            <div className="text-sm font-bold text-gray-600">Read more</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" className="h-5 w-5 ml-2">
-                                <path style={{ fill: '#232326' }} d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right" />
-                            </svg>
-                        </div>
-                        <div className="px-6 pt-4 pb-2">
-                            {blog.tags.map((tag, index) => (
-                                <span key={index} className={`inline-block rounded-full px-3 py-1 text-sm font-bold mr-2 mb-2 ${tag.outlineColor} ${tag.textColor}`}>{tag.name}</span>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </section>
         </div>
     );
 }
 
 export default Latestupdate;
-
-

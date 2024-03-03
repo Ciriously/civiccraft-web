@@ -1,23 +1,24 @@
 @font-face {
   font-family: "Gordita-Medium";
-  src: url(../../public/fonts/Gordita-Medium.ttf) format("truetype");
+  src: url(/fonts/Gordita-Medium.ttf) format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Gordita-Regular";
-  src: url(../../public/fonts/Gordita-Regular.ttf) format("truetype");
+  src: url(/fonts/Gordita-Regular.ttf) format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Gordita-Light";
-  src: url(../../public/fonts/Gordita-Light.ttf) format("truetype");
+  src: url(/fonts/Gordita-Light.ttf) format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Gordita-Bold";
-  src: url(../../public/fonts/Gordita-Bold.ttf) format("truetype");
+  src: url(/fonts/Gordita-Bold.ttf) format("truetype");
   font-style: normal;
 }
+
 .hide-scroll-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;

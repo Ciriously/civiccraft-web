@@ -9,7 +9,7 @@ const ContactUs = () => {
 
       <div className="flex flex-col-reverse md:flex-row bg-white">
 
-        <div className="md:w-1/2 font-gordita-medium bg-gradient-to-br from-indigo-500 via-indigo-300 to-indigo-100 text-white text-lg p-8 flex flex-col justify-center hidden md:flex">
+        <div className="md:w-1/2 font-gordita-medium bg-gradient-to-b from-white from-10% via-[rgba(247,212,93,0.5)] via-30% to-white to-100% text-gray-900 text-lg p-8 flex flex-col justify-center hidden md:flex">
           <div className="mb-8">
             <h2 className="text-5xl font-gordita-bold mb-4 text-center">Get in Touch</h2>
             <p className="text-center">123 Main Street</p>
