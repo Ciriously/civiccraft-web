@@ -62,7 +62,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="mb-8" />
-                <div className="text-center font-gordita-medium text-[#868B91]">&copy; 2019-2023 elArise India Pvt. Ltd.</div>
+                <div className="text-center font-gordita-medium text-[#868B91]">&copy; 2019-2024 CivicCraft online solution Pvt. ltd</div>
             </div>
         </div>
     );

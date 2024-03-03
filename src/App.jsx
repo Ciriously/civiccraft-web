@@ -6,25 +6,27 @@ import LandingPage from './Pages/Landingpage';
 import Carrers from './Pages/Carrers';
 import ContactUs from './Pages/Contact';
 import Teams from './Pages/Teams';
+import Navbar from './shared/Navbar';
 
 const App = () => {
   return (
     <div className="bg-radial-gradient">
       <Router>
+        <Navbar /> {/* Add Navbar component here */}
         <Routes>
           <Route path="/" element={<LandingPage />} index />
           <Route path="/careers" element={<Carrers />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/teams" element={<Teams />} />
         </Routes>
+        {/* Floating WhatsApp button */}
+        <div className="fixed bottom-4 right-4">
+          <WhatsAppButton />
+        </div>
       </Router>
-
-      {/* Floating WhatsApp button */}
-      <div className="fixed bottom-4 right-4">
-        <WhatsAppButton />
-      </div>
     </div>
   );
 }
 
 export default App;
+

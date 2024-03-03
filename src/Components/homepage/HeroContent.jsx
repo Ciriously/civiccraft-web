@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../shared/Navbar';
 import './scroll.css';
 import { HeroCard, heroCardData } from './heroCardData';
 
@@ -14,7 +13,6 @@ const HeroContent = () => {
 
   return (
     <div>
-      <Navbar />
       <section className="flex items-center justify-center h-screen bg-gradient-to-b from-white from-10% via-[rgba(247,212,93,0.5)] via-30% to-white to-100% ">
 
         <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
@@ -30,7 +28,7 @@ const HeroContent = () => {
                 </p>
                 <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                   <div className="mt-3 rounded-lg sm:mt-0">
-                    <button className="px-5 py-4 w-auto mt-6 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-[#F78D4C] lg:px-10 rounded-3xl hover:[F78D4C] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F78D4C] animate-spin">
+                    <button className="px-5 py-4 w-auto mt-6 text-base font-gordita-medium text-center text-white transition duration-500 ease-in-out transform bg-[#F78D4C] lg:px-10 rounded-3xl hover:[F78D4C] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F78D4C] animate-spin">
                       Get Started
                     </button>
 

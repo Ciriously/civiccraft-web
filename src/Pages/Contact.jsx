@@ -1,11 +1,9 @@
 import React from 'react';
 import ContactForm from '../Components/Contact/Contactform';
-import Navbar from '.././shared/Navbar'; // Import the Navbar component
 
 const ContactUs = () => {
   return (
     <div>
-      <div className="bg-white"><Navbar /></div>
 
       <div className="flex flex-col-reverse md:flex-row bg-white">
 

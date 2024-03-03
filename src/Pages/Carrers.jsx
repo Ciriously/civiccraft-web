@@ -1,6 +1,5 @@
 import React from 'react';
 import Jobs from '../Components/Carrers/Jobs';
-import Navbar from '.././shared/Navbar'; // Import the Navbar component
 
 const Careers = () => {
     // Updated job listings data
@@ -14,7 +13,6 @@ const Careers = () => {
 
     return (
         <div>
-            <Navbar /> {/* Include the Navbar component */}
             <div className="container mx-auto flex flex-col items-center justify-start pt-12 px-4"> {/* Added px-4 for padding on smaller screens */}
                 <h1 className="text-5xl font-gordita-bold text-gray-800 mb-8 text-center">
                     Join our World-class Team of <br />

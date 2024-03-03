@@ -4,7 +4,6 @@ import twitterLogo from '../assets/socials/twitter.png';
 import instagramLogo from '../assets/socials/instagram.png';
 import linkedinLogo from '../assets/socials/linkedin.png';
 import gmail from '../assets/socials/gmail.png';
-import Navbar from '.././shared/Navbar';
 import Arabhya from '../assets/Team/Arabhya.jpeg';
 import Animesh from '../assets/Team/Animesh.jpeg';
 import Prerna from '../assets/Team/Prerana.jpg';
@@ -22,7 +21,7 @@ const TeamPage = () => {
         'Core Founding': [
             {
                 name: 'R. Arabhaya Yadav',
-                role: 'Design Director',
+                role: 'App Developer ',
                 image: Arabhya,
                 socials: [
                     // { icon: facebookLogo, url: '#', label: 'Facebook' },
@@ -33,7 +32,7 @@ const TeamPage = () => {
             },
             {
                 name: 'Chinmay Awade',
-                role: 'Design Director',
+                role: 'AI-ML Lead',
                 image: Chinmay,
                 socials: [
                     // { icon: facebookLogo, url: '#', label: 'Facebook' },
@@ -44,7 +43,7 @@ const TeamPage = () => {
             },
             {
                 name: 'R. Animesh Yadav',
-                role: 'Design Director',
+                role: 'Research Lead',
                 image: Animesh,
                 socials: [
                     // { icon: facebookLogo, url: '#', label: 'Facebook' },
@@ -55,7 +54,7 @@ const TeamPage = () => {
             },
             {
                 name: 'Prerana Bhandari',
-                role: 'Design Director',
+                role: 'Product Lead',
                 image: Prerna,
                 socials: [
                     // { icon: facebookLogo, url: '#', label: 'Facebook' },
@@ -77,7 +76,6 @@ const TeamPage = () => {
 
     return (
         <section>
-            <Navbar />
             <div className="container px-6 py-10 mx-auto">
                 <h1 className="text-4xl font-gordita-bold text-center text-gray-800 capitalize lg:text-3xl">
                     Team Civiccraft
